@@ -2,7 +2,7 @@ var APP_DATA = {
   "scenes": [
     {
       "id": "0-01_1f_outside",
-      "name": "01_1F_Outside",
+      "name": "Outside",
       "levels": [
         {
           "tileSize": 256,
@@ -40,7 +40,7 @@ var APP_DATA = {
     },
     {
       "id": "1-02_1f_main-entrance",
-      "name": "02_1F_Main-Entrance",
+      "name": "Main Entrance",
       "levels": [
         {
           "tileSize": 256,
