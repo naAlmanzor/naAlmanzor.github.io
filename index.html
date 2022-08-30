@@ -1,19 +1,75 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+<title>CHED Virtual Tour</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="./css/reset.min.css">
+<link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-    <div class="flex-container">
-        <h2>Landing Page</h2>
+<body class="multiple-scenes">
 
-        <div class="links-container">
-            <a href="./extra test/test.html">TEST</a>
-            <span> | </span>
-            <a href="./extra test/test2.html">TEST 2</a>
-        </div>
-    </div>
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-01_1f_outside">
+        <li class="text">01_1F_Outside</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-02_1f_main-entrance">
+        <li class="text">02_1F_Main-Entrance</li>
+      </a>
+    
+  </ul>
+</div>
+
+<!-- <div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div> -->
+
+<!-- <a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a> -->
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="./assets/icons/fullscreen.png">
+  <img class="icon on" src="./assets/icons/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="./assets/icons/expand.png">
+  <img class="icon on" src="./assets/icons/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="./assets/icons/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="./assets/icons/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="./assets/icons/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="./assets/icons/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="./assets/icons/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="./assets/icons/minus.png">
+</a>
+
+<script src="./js/vendor/screenfull.min.js" ></script>
+<script src="./js/vendor/bowser.min.js" ></script>
+<script src="./js/vendor/marzipano.js" ></script>
+
+<script src="./js/data.js"></script>
+<script src="./js/index.js"></script>
+
 </body>
 </html>
