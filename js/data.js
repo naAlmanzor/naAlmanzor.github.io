@@ -611,7 +611,7 @@ var APP_DATA = {
            "yaw": 3.120572369373866,
            "pitch": 0.3204134398848968,
            "rotation": 5.497787143782138,
-           "target": "12-09_1f_hallway-corner"
+           "target": "5-04_1f_lobby-corner"
          },
          {
            "yaw": 3.123337211702113,
