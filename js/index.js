@@ -88,11 +88,16 @@
       pinFirstLevel: true
     });
 
+    data.entranceHotspots.forEach(function(hotspot) {
+      var element = createHotspotElement(hotspot, 'up');
+      scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch});
+    }); 
+
     // Create link hotspots.
     data.linkHotspots.forEach(function(hotspot) {
-      var element = createLinkHotspotElement(hotspot);
-      scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch });
-    });
+      var element = createHotspotElement(hotspot, 'link');
+      scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch});
+    }); 
 
     // Create info hotspots.
     data.infoHotspots.forEach(function(hotspot) {
@@ -118,7 +123,7 @@
   }
 
   // Set handler for autorotate toggle.
-  // autorotateToggleElement.addEventListener('click', toggleAutorotate);
+  autorotateToggleElement.addEventListener('click', toggleAutorotate);
 
   // Set up fullscreen mode, if supported.
   if (screenfull.enabled && data.settings.fullscreenButton) {
@@ -158,25 +163,25 @@
   });
 
   // DOM elements for view controls.
-  var viewUpElement = document.querySelector('#viewUp');
-  var viewDownElement = document.querySelector('#viewDown');
-  var viewLeftElement = document.querySelector('#viewLeft');
-  var viewRightElement = document.querySelector('#viewRight');
-  var viewInElement = document.querySelector('#viewIn');
-  var viewOutElement = document.querySelector('#viewOut');
+  // var viewUpElement = document.querySelector('#viewUp');
+  // var viewDownElement = document.querySelector('#viewDown');
+  // var viewLeftElement = document.querySelector('#viewLeft');
+  // var viewRightElement = document.querySelector('#viewRight');
+  // var viewInElement = document.querySelector('#viewIn');
+  // var viewOutElement = document.querySelector('#viewOut');
 
   // Dynamic parameters for controls.
   var velocity = 0.7;
   var friction = 3;
 
   // Associate view controls with elements.
-  var controls = viewer.controls();
-  controls.registerMethod('upElement',    new Marzipano.ElementPressControlMethod(viewUpElement,     'y', -velocity, friction), true);
-  controls.registerMethod('downElement',  new Marzipano.ElementPressControlMethod(viewDownElement,   'y',  velocity, friction), true);
-  controls.registerMethod('leftElement',  new Marzipano.ElementPressControlMethod(viewLeftElement,   'x', -velocity, friction), true);
-  controls.registerMethod('rightElement', new Marzipano.ElementPressControlMethod(viewRightElement,  'x',  velocity, friction), true);
-  controls.registerMethod('inElement',    new Marzipano.ElementPressControlMethod(viewInElement,  'zoom', -velocity, friction), true);
-  controls.registerMethod('outElement',   new Marzipano.ElementPressControlMethod(viewOutElement, 'zoom',  velocity, friction), true);
+  // var controls = viewer.controls();
+  // controls.registerMethod('upElement',    new Marzipano.ElementPressControlMethod(viewUpElement,     'y', -velocity, friction), true);
+  // controls.registerMethod('downElement',  new Marzipano.ElementPressControlMethod(viewDownElement,   'y',  velocity, friction), true);
+  // controls.registerMethod('leftElement',  new Marzipano.ElementPressControlMethod(viewLeftElement,   'x', -velocity, friction), true);
+  // controls.registerMethod('rightElement', new Marzipano.ElementPressControlMethod(viewRightElement,  'x',  velocity, friction), true);
+  // controls.registerMethod('inElement',    new Marzipano.ElementPressControlMethod(viewInElement,  'zoom', -velocity, friction), true);
+  // controls.registerMethod('outElement',   new Marzipano.ElementPressControlMethod(viewOutElement, 'zoom',  velocity, friction), true);
 
   function sanitize(s) {
     return s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;');
@@ -244,7 +249,7 @@
     }
   }
 
-  function createLinkHotspotElement(hotspot) {
+  function createHotspotElement(hotspot, type) {
 
     // Create wrapper element to hold icon and tooltip.
     var wrapper = document.createElement('div');
@@ -253,7 +258,8 @@
 
     // Create image element.
     var icon = document.createElement('img');
-    icon.src = './assets/icons/link.png';
+    var source = './assets/icons/'+type.toString()+'.png';
+    icon.src = source;
     icon.classList.add('link-hotspot-icon');
 
     // Set rotation transform.
