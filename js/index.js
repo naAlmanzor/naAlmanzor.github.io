@@ -96,18 +96,17 @@
       pinFirstLevel: true
     });
 
-    // Creat entrance hotspots
-    data.entranceHotspots.forEach(function(hotspot) {
-      var element = createHotspotElement(hotspot, 'entrance');
-      scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch});
-    }); 
-
     // Create link hotspots.
     data.linkHotspots.forEach(function(hotspot) {
       var elementImg = ""
+
+      // Image will depend on the targeted room
       if (hotspot.target.includes("front-side") || hotspot.target.includes("back-side") 
-      ||hotspot.target.includes("administration-center")  ){
+      || hotspot.target.includes("center-room")){
         elementImg = "plus";
+      }
+      else if(hotspot.target.includes("entrance")){
+        elementImg = "entrance";
       }
       else{
         elementImg = "link";
