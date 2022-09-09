@@ -31,10 +31,10 @@ var APP_DATA = {
 
        "entranceHotspots":[
         {
-          "yaw": -2.9725828797760023,
-          "pitch": 0.1699431985984461,
+          "yaw": -2.9925828797760023,
+          "pitch": -0.1079431985984461,
           "rotation": 0,
-          "target": "1-02_1f_main-entrance"
+          "target": "1-02_1f_main-entrance",
         }
        ],
        "linkHotspots": [],
@@ -43,6 +43,7 @@ var APP_DATA = {
      {
        "id": "1-02_1f_main-entrance",
        "name": "Main Entrance",
+       "floor": 2,
        "levels": [
          {
            "tileSize": 256,
@@ -71,18 +72,18 @@ var APP_DATA = {
        "entranceHotspots":[],
        "linkHotspots": [
          {
-         "yaw": -2.7395573010713807,
-         "pitch": 0.5873647216994655,
-         "rotation": 0,
-         "target": "0-01_1f_outside",
-         
+          "yaw": -2.7395573010713807,
+          "pitch": 0.5873647216994655,
+          "rotation": 0,
+          "target": "0-01_1f_outside",
+          "perspective": 500
          },
          {
            "yaw": 0.046131549595525456,
            "pitch": 0.3391765100864603,
            "rotation": 0,
            "target": "3-03_1f_lobby-center",
-           
+           "perspective": 500
          }
        ],
        "infoHotspots": [
@@ -91,6 +92,7 @@ var APP_DATA = {
            "pitch": -0.3718919045371525,
            "title": "Sample Info",
            "text": "This is a Qr Image",
+           "perspective": 500
          }
        ]
      },
@@ -129,14 +131,14 @@ var APP_DATA = {
            "pitch": 0.5873647216994655,
            "rotation": 0,
            "target": "0-01_1f_outside",
-           
+           "perspective": 500
          },
          {
            "yaw": 0.039092003765624384,
            "pitch": 0.34585731793744046,
            "rotation": 0,
            "target": "3-03_1f_lobby-center",
-           
+           "perspective": 500
          }
        ],
        "infoHotspots": [
@@ -180,13 +182,13 @@ var APP_DATA = {
         {
           "yaw": -0.1900511262581297,
           "pitch": 0.4131406758173686,
-          "rotation": 6.283185307179586,
+          "rotation": 0,
           "target": "2-02_1f_main-entrance-reversed"
         },
         {
           "yaw": 2.6122882008821104,
           "pitch": 0.1289998681155069,
-          "rotation": 5.497787143782138,
+          "rotation": 0,
           "target": "6-05_1f_records-entrance"
         }
         ],
@@ -196,7 +198,7 @@ var APP_DATA = {
            "pitch": 0.3650013297908039,
            "rotation": 0,
            "target": "5-04_1f_lobby-corner",
-           
+           "perspective": 500
          }
        ],
        "infoHotspots": [
@@ -248,12 +250,11 @@ var APP_DATA = {
            "pitch": 0.40029507654535834,
            "rotation": 0,
            "target": "2-02_1f_main-entrance-reversed",
-           
           },
           {
             "yaw": 2.619936987858619,
             "pitch": 0.10179377778197818,
-            "rotation": 5.497787143782138,
+            "rotation": 0,
             "target": "6-05_1f_records-entrance",
           }
         ],
@@ -263,7 +264,7 @@ var APP_DATA = {
            "pitch": 0.37338659441437727,
            "rotation": 0,
            "target": "5-04_1f_lobby-corner",
-           
+           "perspective": 200
          },
        ],
        "infoHotspots": []
@@ -299,33 +300,31 @@ var APP_DATA = {
        "entranceHotspots":[
         {
           "yaw": -1.1795377961493116,
-          "pitch": 0.4004702356141774,
-          "rotation": 0.7853981633974483,
+          "pitch": 0.2004702356141774,
+          "rotation": 0,
           "target": "13-10_1f_administration-entrance",
-          
         },
         {
           "yaw": 1.6004737037496817,
           "pitch": 0.24814424836103655,
           "rotation": 0,
           "target": "6-05_1f_records-entrance",
-          
         }
        ],
        "linkHotspots": [
          {
-           "yaw": -0.01997264710148805,
-           "pitch": 0.43260920737269615,
-           "rotation": 0.7853981633974483,
+           "yaw": -0.05997264710148805,
+           "pitch": 0.5,
+           "rotation": 0.48,
            "target": "4-03_1f_lobby-center-reversed",
-           
+           "perspective": 365
          },
          {
            "yaw": -1.5558965615488987,
-           "pitch": 0.29247369597525186,
+           "pitch": 0.19247369597525186,
            "rotation": 0,
            "target": "10-08_1f_hallway-center",
-           
+           "perspective": 0
          }
        ],
        "infoHotspots": [
@@ -375,7 +374,7 @@ var APP_DATA = {
         {
           "yaw": -3.04680694416151,
           "pitch": 0.11757843174422433,
-          "rotation": 1.5707963267948966,
+          "rotation": 0,
           "target": "13-10_1f_administration-entrance",
         }
       ],
@@ -385,7 +384,6 @@ var APP_DATA = {
            "pitch": 0.15044588226278677,
            "rotation": 5.497787143782138,
            "target": "7-06_1f_records-front-side",
-           
          },
          {
            "yaw": -0.656726542485579,
@@ -439,15 +437,15 @@ var APP_DATA = {
          "pitch": 0.11400586043259153,
          "fov": 1.3860279694857303
        },
-       "entranceHotspots":[],
+       "entranceHotspots":[
+        {
+          "yaw": 1.658729439745855,
+          "pitch": 0.03399651259120695,
+          "rotation": 0,
+          "target": "9-05_1f_records-entrance-reversed",
+        }
+       ],
        "linkHotspots": [
-         {
-           "yaw": 1.658729439745855,
-           "pitch": 0.03399651259120695,
-           "rotation": 0,
-           "target": "9-05_1f_records-entrance-reversed",
-           
-         },
          {
            "yaw": 0.9017259041037935,
            "pitch": 0.4111406895751628,
@@ -490,7 +488,7 @@ var APP_DATA = {
         {
           "yaw": 2.3698171976940117,
           "pitch": 0.11024081355432713,
-          "rotation": 7.0685834705770345,
+          "rotation": 0,
           "target": "9-05_1f_records-entrance-reversed",
         }
       ],
@@ -500,7 +498,7 @@ var APP_DATA = {
            "pitch": 0.10318829976044697,
            "rotation": 0,
            "target": "7-06_1f_records-front-side",
-           
+           "perspective": 500
          }
        ],
        "infoHotspots": []
@@ -537,7 +535,7 @@ var APP_DATA = {
         {
           "yaw": -3.0520408168755395,
           "pitch": 0.09662996649865008,
-          "rotation": 1.5707963267948966,
+          "rotation": 0,
           "target": "13-10_1f_administration-entrance", 
         }],
        "linkHotspots": [
@@ -546,14 +544,14 @@ var APP_DATA = {
            "pitch": 0.0145881356174241,
            "rotation": 0,
            "target": "10-08_1f_hallway-center",
-           
+           "perspective": 500
          },
          {
            "yaw": -2.429645044897555,
            "pitch": 0.49095711723487945,
            "rotation": 1.5707963267948966,
            "target": "4-03_1f_lobby-center-reversed",
-           
+           "perspective": 500
          }
        ],
        "infoHotspots": []
@@ -605,13 +603,15 @@ var APP_DATA = {
            "yaw": 0.05445781295897234,
            "pitch": 0.22685749976279368,
            "rotation": 0,
-           "target": "12-09_1f_hallway-corner"
+           "target": "12-09_1f_hallway-corner",
+           "perspective": 0
          },
          {
            "yaw": 3.1284945924430794,
            "pitch": 0.3055457384528282,
            "rotation": 4.71238898038469,
            "target": "5-04_1f_lobby-corner",
+           "perspective": 0
          }
        ],
        "infoHotspots": []
@@ -665,12 +665,14 @@ var APP_DATA = {
            "pitch": 0.3204134398848968,
            "rotation": 5.497787143782138,
            "target": "5-04_1f_lobby-corner",
+           "perspective": 500
          }, 
          {
-           "yaw": -2.2958551367313884,
-           "pitch": 0.5987935558265498,
-           "rotation": 1.5707963267948966,
+          "yaw": 0.05445781295897234,
+          "pitch": 0.22685749976279368,
+          "rotation": 0,
            "target": "12-09_1f_hallway-corner", 
+           "perspective": 500
          }
        ],
        "infoHotspots": []
@@ -710,6 +712,7 @@ var APP_DATA = {
            "pitch": 0.19183986201926118,
            "rotation": 0,
            "target": "11-08_1f_hallway-center-reversed",
+           "perspective": 500
          }
        ],
        "infoHotspots": []
@@ -749,21 +752,21 @@ var APP_DATA = {
            "pitch": 0.3489780161960745,
            "rotation": 4.71238898038469,
            "target": "3-03_1f_lobby-center",
-           
+           "perspective": 500
          },
          {
            "yaw": -2.250633374636136,
            "pitch": 0.5213965876662527,
            "rotation": 1.5707963267948966,
            "target": "10-08_1f_hallway-center",
-           
+           "perspective": 500
          },
          {
            "yaw": -0.7145813874247722,
            "pitch": 0.2083803974726841,
            "rotation": 0,
            "target": "14-11_1f_administration-center",
-           
+           "perspective": 500
          }
        ],
        "infoHotspots": []
@@ -842,14 +845,14 @@ var APP_DATA = {
            "pitch": 0.5987935558265498,
            "rotation": 1.5707963267948966,
            "target": "12-09_1f_hallway-corner",
-           
+           "perspective": 500
          },
          {
            "yaw": 2.295814021341177,
            "pitch": 0.4394342473169104,
            "rotation": 4.71238898038469,
            "target": "5-04_1f_lobby-corner",
-           
+           "perspective": 500
          }
        ],
        "infoHotspots": []

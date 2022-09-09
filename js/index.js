@@ -72,7 +72,15 @@
 
   // Create scenes.
   var scenes = data.scenes.map(function(data) {
-    var urlPrefix = "./assets/1F";
+    if (data.id.includes("1f")){
+      var floor = "1F";
+    }
+
+    // Open this if there is 2f in the data
+    // if (data.id.includes("main-entrance")){
+    //   var floor = "2F";
+    // }
+    var urlPrefix = "./assets/"+floor.toString();
     var source = Marzipano.ImageUrlSource.fromString(
       urlPrefix + "/" + data.id + "/{z}/{f}/{y}/{x}.jpg",
       { cubeMapPreviewUrl: urlPrefix + "/" + data.id + "/preview.jpg" });
@@ -88,14 +96,23 @@
       pinFirstLevel: true
     });
 
+    // Creat entrance hotspots
     data.entranceHotspots.forEach(function(hotspot) {
-      var element = createHotspotElement(hotspot, 'up');
+      var element = createHotspotElement(hotspot, 'entrance');
       scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch});
     }); 
 
     // Create link hotspots.
     data.linkHotspots.forEach(function(hotspot) {
-      var element = createHotspotElement(hotspot, 'link');
+      var elementImg = ""
+      if (hotspot.target.includes("front-side") || hotspot.target.includes("back-side") 
+      ||hotspot.target.includes("administration-center")  ){
+        elementImg = "plus";
+      }
+      else{
+        elementImg = "link";
+      }
+      var element = createHotspotElement(hotspot, elementImg);
       scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch});
     }); 
 
@@ -104,6 +121,7 @@
       var element = createInfoHotspotElement(hotspot);
       scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch });
     });
+    
 
     return {
       data: data,
@@ -216,10 +234,10 @@
   //   sceneListToggleElement.classList.add('enabled');
   // }
 
-  function hideSceneList() {
-    sceneListElement.classList.remove('enabled');
-    sceneListToggleElement.classList.remove('enabled');
-  }
+  // function hideSceneList() {
+  //   sceneListElement.classList.remove('enabled');
+  //   sceneListToggleElement.classList.remove('enabled');
+  // }
 
   function toggleSceneList() {
     sceneListElement.classList.toggle('enabled');
