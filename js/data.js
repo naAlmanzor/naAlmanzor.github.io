@@ -177,13 +177,13 @@ var APP_DATA = {
        "linkHotspots": [
         {
           "yaw": -0.1900511262581297,
-          "pitch": 0.4131406758173686,
+          "pitch": 0.1131406758173686,
           "rotation": 0,
           "target": "2-02_1f_main-entrance-reversed"
         },
         {
           "yaw": 2.6122882008821104,
-          "pitch": 0.1289998681155069,
+          "pitch": 0.0289998681155069,
           "rotation": 0,
           "target": "6-05_1f_records-entrance"
         },
@@ -248,13 +248,13 @@ var APP_DATA = {
          },
          {
           "yaw": -0.1977494635378143,
-          "pitch": 0.40029507654535834,
+          "pitch": 0.10029507654535834,
           "rotation": 0,
           "target": "2-02_1f_main-entrance-reversed",
          },
          {
            "yaw": 2.619936987858619,
-           "pitch": 0.10179377778197818,
+           "pitch": 0.05179377778197818,
            "rotation": 0,
            "target": "6-05_1f_records-entrance",
          }
@@ -306,13 +306,13 @@ var APP_DATA = {
          },
          {
           "yaw": -1.1795377961493116,
-          "pitch": 0.2004702356141774,
+          "pitch": 0.1004702356141774,
           "rotation": 0,
           "target": "13-10_1f_administration-entrance",
         },
         {
           "yaw": 1.6004737037496817,
-          "pitch": 0.24814424836103655,
+          "pitch": 0.14814424836103655,
           "rotation": 0,
           "target": "6-05_1f_records-entrance",
         }

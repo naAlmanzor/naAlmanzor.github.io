@@ -76,7 +76,7 @@
       var floor = "1F";
     }
 
-    // Open this if there is 2f in the data
+    /* Open this if there is 2f in the data */
     // if (data.id.includes("main-entrance")){
     //   var floor = "2F";
     // }
@@ -103,7 +103,7 @@
       // Image will depend on the targeted room
       if (hotspot.target.includes("front-side") || hotspot.target.includes("back-side") 
       || hotspot.target.includes("center-room")){
-        elementImg = "plus";
+        elementImg = "link-rooms";
       }
       else if(hotspot.target.includes("entrance")){
         elementImg = "entrance";
