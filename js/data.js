@@ -301,8 +301,8 @@ var APP_DATA = {
            "target": "4-03_1f_lobby-center-reversed",
          },
          {
-           "yaw": -1.5558965615488987,
-           "pitch": 0.19247369597525186,
+           "yaw": -1.5258965615488987,
+           "pitch": 0.29247369597525186,
            "rotation": 0,
            "target": "10-08_1f_hallway-center",
          },
@@ -734,16 +734,16 @@ var APP_DATA = {
          "fov": 1.3860279694857303
        },
        "linkHotspots": [
-         {
-           "yaw": 2.1923963822250565,
-           "pitch": 0.3489780161960745,
-           "rotation": 4.71238898038469,
-           "target": "3-03_1f_lobby-center",
-         },
+        //  {
+        //    "yaw": 2.1923963822250565,
+        //    "pitch": 0.3489780161960745,
+        //    "rotation": 4.71238898038469,
+        //    "target": "3-03_1f_lobby-center",
+        //  },
          {
            "yaw": -2.250633374636136,
            "pitch": 0.5213965876662527,
-           "rotation": 1.5707963267948966,
+           "rotation": 1,
            "target": "10-08_1f_hallway-center",
          },
          {
@@ -753,10 +753,10 @@ var APP_DATA = {
            "target": "14-11_1f_administration-center-room",
          },
          {
-           "yaw": -4.250633374636136,
+           "yaw": -4.050633374636136,
            "pitch": 0.5213965876662527,
            "rotation": 1.5707963267948966,
-           "target": "10-08_1f_hallway-center",
+           "target": "5-04_1f_lobby-corner",
          }
        ],
        "infoHotspots": []

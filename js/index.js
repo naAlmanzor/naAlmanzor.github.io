@@ -102,17 +102,42 @@
 
       // Image will depend on the targeted room
       if (hotspot.target.includes("front-side") || hotspot.target.includes("back-side") 
-      || hotspot.target.includes("center-room")){
+      || hotspot.target.includes("center-room") ){
         elementImg = "link-rooms";
       }
       else if(hotspot.target.includes("entrance")){
         elementImg = "entrance";
+        var element = createHotspotElement(hotspot, elementImg);
+        scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch});
+      }
+      else if(hotspot.target.includes("lobby-corner")){
+        elementImg = "link-rooms";
+        var element = createHotspotElement(hotspot, elementImg);
+        scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch}, {perspective: {extraTransforms: "rotateX(70deg)"}});
+      }
+      else if(hotspot.target.includes("0-01_2f_hallway_stairwell")){
+        elementImg = "stair-up";
+        var element = createHotspotElement(hotspot, elementImg);
+        scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch});
+      } //12-09_1f_hallway-corner
+      else if(hotspot.target.includes("12-09_1f_hallway-corner")){
+        elementImg = "stair-down";
+        var element = createHotspotElement(hotspot, elementImg);
+        scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch});
+      }//conference-room-center
+      else if(hotspot.target.includes("conference-room-center")){
+        elementImg = "link-rooms";
+        var element = createHotspotElement(hotspot, elementImg);
+        scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch});
       }
       else{
-        elementImg = "link";
+        elementImg = "arrow";
+        var element = createHotspotElement(hotspot, elementImg);
+        scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch}, {perspective: {extraTransforms: "rotateX(70deg)"}});
       }
-      var element = createHotspotElement(hotspot, elementImg);
-      scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch}), {perspective: {extraTransforms: "rotateX(5deg)"}};
+      // Had to move this block to prevent non-floor icons from adjusting their rotation.
+      // var element = createHotspotElement(hotspot, elementImg);
+      // scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch}, {perspective: {extraTransforms: "rotateX(65deg)"}});
     }); 
 
     // Create info hotspots.
@@ -305,13 +330,13 @@
     stopTouchAndScrollEventPropagation(wrapper);
 
     // Create tooltip element.
-    var tooltip = document.createElement('div');
-    tooltip.classList.add('hotspot-tooltip');
-    tooltip.classList.add('link-hotspot-tooltip');
-    tooltip.innerHTML = findSceneDataById(hotspot.target).name;
+    // var tooltip = document.createElement('div');
+    // tooltip.classList.add('hotspot-tooltip');
+    // tooltip.classList.add('link-hotspot-tooltip');
+    // tooltip.innerHTML = findSceneDataById(hotspot.target).name;
 
     wrapper.appendChild(icon);
-    wrapper.appendChild(tooltip);
+    // wrapper.appendChild(tooltip);
 
     return wrapper;
   }
