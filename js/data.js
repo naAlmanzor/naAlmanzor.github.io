@@ -73,23 +73,20 @@ var APP_DATA = {
           "pitch": 0.5873647216994655,
           "rotation": 0,
           "target": "0-01_1f_outside",
-          "perspective": 500
          },
          {
            "yaw": 0.046131549595525456,
            "pitch": 0.3391765100864603,
            "rotation": 0,
            "target": "3-03_1f_lobby-center",
-           "perspective": 500
          }
        ],
        "infoHotspots": [
          {
            "yaw": 1.0030102336653925,
            "pitch": -0.3718919045371525,
-           "title": "Sample Info",
-           "text": "This is a Qr Image",
-           "perspective": 500
+           "title": "QR Code",
+           "popup": "./assets/icons/up.png",
          }
        ]
      },
@@ -141,8 +138,8 @@ var APP_DATA = {
          {
            "yaw": 1.003048916953631,
            "pitch": -0.38434638365872154,
-           "title": "Sample Info",
-           "text": "This is a QR Code"
+           "title": "QR Code",
+           "popup": "./assets/icons/up.png",
          }
        ]
      },
@@ -196,17 +193,17 @@ var APP_DATA = {
          }
        ],
        "infoHotspots": [
-         {
-           "yaw": -1.5547279662748785,
-           "pitch": -0.18069876998386647,
-           "title": "Sample",
-           "text": "Sample<div><br></div>"
-         },
+        //  {
+        //    "yaw": -1.5547279662748785,
+        //    "pitch": -0.18069876998386647,
+        //    "title": "Sample",
+        //    "text": "Sample<div><br></div>"
+        //  },
          {
            "yaw": 1.3345362945410386,
            "pitch": -0.12316665319798759,
-           "title": "Sample",
-           "text": "Sample<div><br></div>"
+           "title": "Records",
+           "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida congue nibh et mattis. Donec pellentesque leo sed lorem gravida laoreet. Quisque auctor laoreet turpis vel facilisis. Nunc neque lacus, finibus et accumsan mollis, consequat ac augue. Mauris hendrerit lectus ut urna fermentum, a efficitur metus finibus. Cras consectetur finibus hendrerit. Aliquam mi lacus, accumsan iaculis eros in, viverra pretium ex. Nunc a mi ac massa porttitor euismod. Nam sem magna, tincidunt eget dictum in, tincidunt sodales nulla. Aliquam sagittis lorem eget sodales viverra. Vivamus et urna magna. Nullam laoreet, sem nec tempus gravida, purus mi iaculis metus, non tincidunt sem mauris eget quam."
          }
        ]
      },
@@ -259,7 +256,14 @@ var APP_DATA = {
            "target": "6-05_1f_records-entrance",
          }
        ],
-       "infoHotspots": []
+       "infoHotspots": [
+         {
+          "yaw": 1.3345362945410386,
+           "pitch": -0.12316665319798759,
+           "title": "Records",
+           "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida congue nibh et mattis. Donec pellentesque leo sed lorem gravida laoreet. Quisque auctor laoreet turpis vel facilisis. Nunc neque lacus, finibus et accumsan mollis, consequat ac augue. Mauris hendrerit lectus ut urna fermentum, a efficitur metus finibus. Cras consectetur finibus hendrerit. Aliquam mi lacus, accumsan iaculis eros in, viverra pretium ex. Nunc a mi ac massa porttitor euismod. Nam sem magna, tincidunt eget dictum in, tincidunt sodales nulla. Aliquam sagittis lorem eget sodales viverra. Vivamus et urna magna. Nullam laoreet, sem nec tempus gravida, purus mi iaculis metus, non tincidunt sem mauris eget quam."
+         }
+      ]
      },
      {
        "id": "5-04_1f_lobby-corner",
@@ -295,14 +299,12 @@ var APP_DATA = {
            "pitch": 0.5,
            "rotation": 0.48,
            "target": "4-03_1f_lobby-center-reversed",
-           "perspective": 365
          },
          {
            "yaw": -1.5558965615488987,
            "pitch": 0.19247369597525186,
            "rotation": 0,
            "target": "10-08_1f_hallway-center",
-           "perspective": 0
          },
          {
           "yaw": -1.1795377961493116,
@@ -321,14 +323,23 @@ var APP_DATA = {
          {
            "yaw": -2.7224178040347464,
            "pitch": 0.10603776137863896,
-           "title": "Sample",
-           "text": "Sample"
+           "title": "Restricted",
+           "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida congue nibh et mattis. Donec pellentesque leo sed lorem gravida laoreet. Quisque auctor laoreet turpis vel facilisis. Nunc neque lacus, finibus et accumsan mollis, consequat ac augue. Mauris hendrerit lectus ut urna fermentum, a efficitur metus finibus. Cras consectetur finibus hendrerit. Aliquam mi lacus, accumsan iaculis eros in, viverra pretium ex. Nunc a mi ac massa porttitor euismod. Nam sem magna, tincidunt eget dictum in, tincidunt sodales nulla. Aliquam sagittis lorem eget sodales viverra. Vivamus et urna magna. Nullam laoreet, sem nec tempus gravida, purus mi iaculis metus, non tincidunt sem mauris eget quam."
          },
+
+         {
+          "yaw": -3.8024178040347464,
+          "pitch": 0.08603776137863896,
+          "title": "Restricted",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida congue nibh et mattis. Donec pellentesque leo sed lorem gravida laoreet. Quisque auctor laoreet turpis vel facilisis. Nunc neque lacus, finibus et accumsan mollis, consequat ac augue. Mauris hendrerit lectus ut urna fermentum, a efficitur metus finibus. Cras consectetur finibus hendrerit. Aliquam mi lacus, accumsan iaculis eros in, viverra pretium ex. Nunc a mi ac massa porttitor euismod. Nam sem magna, tincidunt eget dictum in, tincidunt sodales nulla. Aliquam sagittis lorem eget sodales viverra. Vivamus et urna magna. Nullam laoreet, sem nec tempus gravida, purus mi iaculis metus, non tincidunt sem mauris eget quam."
+        },
          {
            "yaw": 1.0605471922804615,
            "pitch": -0.18495530854154119,
-           "title": "Sample",
-           "text": "Sample<br>"
+           "title": "sample",
+           "popup": "./assets/icons/windowed.png",
+          //  "title": "Sample",
+          //  "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida congue nibh et mattis. Donec pellentesque leo sed lorem gravida laoreet. Quisque auctor laoreet turpis vel facilisis. Nunc neque lacus, finibus et accumsan mollis, consequat ac augue. Mauris hendrerit lectus ut urna fermentum, a efficitur metus finibus. Cras consectetur finibus hendrerit. Aliquam mi lacus, accumsan iaculis eros in, viverra pretium ex. Nunc a mi ac massa porttitor euismod. Nam sem magna, tincidunt eget dictum in, tincidunt sodales nulla. Aliquam sagittis lorem eget sodales viverra. Vivamus et urna magna. Nullam laoreet, sem nec tempus gravida, purus mi iaculis metus, non tincidunt sem mauris eget quam."
          }
        ]
      },
@@ -684,7 +695,12 @@ var APP_DATA = {
            "pitch": 0.19183986201926118,
            "rotation": 0,
            "target": "11-08_1f_hallway-center-reversed",
-           "perspective": 500
+         },
+         {
+           "yaw": 1.1125022902715566,
+           "pitch": 0.19183986201926118,
+           "rotation": 0,
+           "target": "0-01_2f_hallway_stairwell",
          }
        ],
        "infoHotspots": []
@@ -723,21 +739,24 @@ var APP_DATA = {
            "pitch": 0.3489780161960745,
            "rotation": 4.71238898038469,
            "target": "3-03_1f_lobby-center",
-           "perspective": 500
          },
          {
            "yaw": -2.250633374636136,
            "pitch": 0.5213965876662527,
            "rotation": 1.5707963267948966,
            "target": "10-08_1f_hallway-center",
-           "perspective": 500
          },
          {
            "yaw": -0.7145813874247722,
            "pitch": 0.2083803974726841,
            "rotation": 0,
            "target": "14-11_1f_administration-center-room",
-           "perspective": 500
+         },
+         {
+           "yaw": -4.250633374636136,
+           "pitch": 0.5213965876662527,
+           "rotation": 1.5707963267948966,
+           "target": "10-08_1f_hallway-center",
          }
        ],
        "infoHotspots": []
@@ -829,7 +848,1190 @@ var APP_DATA = {
          }
        ],
        "infoHotspots": []
-     }
+     },
+
+     // 2nd Floor
+
+     {
+      "id": "0-01_2f_hallway_stairwell",
+      "name": "01_2F_Hallway_Stairwell",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": 1.8981447205761386,
+        "pitch": 0.008859580219471752,
+        "fov": 1.3860279694857303
+      },
+      "linkHotspots": [
+        {
+          "yaw": 0.9225971846589758,
+          "pitch": 0.2411216765974995,
+          "rotation": 0,
+          "target": "12-09_1f_hallway-corner"
+        },
+        {
+          "yaw": 1.4310710777952735,
+          "pitch": 0.1726869461146361,
+          "rotation": 0,
+          "target": "0-01_2f_hallway_stairwell"
+        },
+        {
+          "yaw": 2.268632497877423,
+          "pitch": 0.21255371844952364,
+          "rotation": 0,
+          "target": "3-03_2f_conference-room-entrance-01"
+        },
+        {
+          "yaw": -2.958398027332139,
+          "pitch": 0.37717859412550503,
+          "rotation": 0,
+          "target": "1-02_2f_hallway-center"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "1-02_2f_hallway-center",
+      "name": "02_2F_Hallway-Center",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": -2.164293111546314,
+        "pitch": 0.06845573689116335,
+        "fov": 1.3860279694857303
+      },
+      "linkHotspots": [
+        {
+          "yaw": 0.15756019250107656,
+          "pitch": 0.2667942143337889,
+          "rotation": 0,
+          "target": "0-01_2f_hallway_stairwell"
+        },
+        {
+          "yaw": -2.9560679027994166,
+          "pitch": 0.12651899384129806,
+          "rotation": 0,
+          "target": "8-06_2f_technical-division-entrance-01"
+        },
+        {
+          "yaw": -1.6063673247800025,
+          "pitch": 0.24274612607307233,
+          "rotation": 0,
+          "target": "20-13_2f_secretary-room-entrance"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "2-02_2f_hallway-center-reveresed",
+      "name": "02_2F_Hallway-Center-reveresed",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": 0.19975725677023703,
+        "pitch": 0.08562052467597425,
+        "fov": 1.3860279694857303
+      },
+      "linkHotspots": [
+        {
+          "yaw": 0.19683754826156985,
+          "pitch": 0.3231919001957966,
+          "rotation": 0,
+          "target": "0-01_2f_hallway_stairwell"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "3-03_2f_conference-room-entrance-01",
+      "name": "03_2F_Conference-Room-Entrance-01",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": -2.416291536452148,
+        "pitch": 0.008228733642418717,
+        "fov": 1.3860279694857303
+      },
+      "linkHotspots": [
+        {
+          "yaw": -2.1597050553948893,
+          "pitch": 0.1313365231137702,
+          "rotation": 0,
+          "target": "5-04_2f_conference-room-center"
+        },
+        ,
+        {
+          "yaw": 0.9618627238738018,
+          "pitch": 0.5837279561533322,
+          "rotation": 0,
+          "target": "0-01_2f_hallway_stairwell"
+        },
+        {
+          "yaw": -0.9304086343642766,
+          "pitch": 0.4756106193390881,
+          "rotation": 0,
+          "target": "1-02_2f_hallway-center"
+        },
+        
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "4-03_2f_conference-room-entrance-01-reversed",
+      "name": "03_2F_Conference-Room-Entrance-01-reversed",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": -0.4132977103647093,
+        "pitch": 0.22594305122827762,
+        "fov": 1.3860279694857303
+      },
+      "linkHotspots": [
+        {
+          "yaw": -2.1935113645792637,
+          "pitch": 0.11441461590144542,
+          "rotation": 0,
+          "target": "5-04_2f_conference-room-center"
+        },
+        {
+          "yaw": 0.8358136934968172,
+          "pitch": 0.6124998391563583,
+          "rotation": 0,
+          "target": "0-01_2f_hallway_stairwell"
+        },
+        {
+          "yaw": -0.9795860501373106,
+          "pitch": 0.43732854451529235,
+          "rotation": 0,
+          "target": "1-02_2f_hallway-center"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "5-04_2f_conference-room-center",
+      "name": "04_2F_Conference-Room-Center",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": -1.4381064776904466,
+        "pitch": 0.14744500228828272,
+        "fov": 1.3860279694857303
+      },
+      "linkHotspots": [
+        {
+          "yaw": -0.47972048336505146,
+          "pitch": 0.10942825990102634,
+          "rotation": 0,
+          "target": "4-03_2f_conference-room-entrance-01-reversed"
+        },
+        {
+          "yaw": -2.376042287691684,
+          "pitch": 0.07134287898702851,
+          "rotation": 0,
+          "target": "7-05_2f_conference-room-entrance-02-reversed"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "6-05_2f_conference-room-entrance-02",
+      "name": "05_2F_Conference-Room-Entrance-02",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": -0.34595732209337804,
+        "pitch": 0.11112121326228319,
+        "fov": 1.3860279694857303
+      },
+      "linkHotspots": [
+        {
+          "yaw": -0.7851290188059927,
+          "pitch": 0.14459616769714856,
+          "rotation": 0,
+          "target": "5-04_2f_conference-room-center"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "7-05_2f_conference-room-entrance-02-reversed",
+      "name": "05_2F_Conference-Room-Entrance-02-reversed",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": 3.003631366844946,
+        "pitch": 0.2225069252369387,
+        "fov": 1.3860279694857303
+      },
+      "linkHotspots": [
+        {
+          "yaw": -0.7990349348410266,
+          "pitch": 0.13696488655294026,
+          "rotation": 0,
+          "target": "5-04_2f_conference-room-center"
+        },
+        {
+          "yaw": -2.450777702159911,
+          "pitch": 0.19754491335468316,
+          "rotation": 0,
+          "target": "2-02_2f_hallway-center-reveresed"
+        },
+        {
+          "yaw": -3.1086604857593674,
+          "pitch": 0.15203071447067273,
+          "rotation": 0,
+          "target": "18-12_2f_secretary-room-center"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "8-06_2f_technical-division-entrance-01",
+      "name": "06_2F_Technical-Division-Entrance-01",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "pitch": 0,
+        "yaw": 0,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [
+        {
+          "yaw": -2.8983595201300965,
+          "pitch": 0.37462749554581976,
+          "rotation": 0,
+          "target": "1-02_2f_hallway-center"
+        },
+        {
+          "yaw": -0.952018188220924,
+          "pitch": 0.08197694805318356,
+          "rotation": 0,
+          "target": "6-05_2f_conference-room-entrance-02"
+        },
+        {
+          "yaw": 0.9088580852346855,
+          "pitch": 0.11201205604581155,
+          "rotation": 0,
+          "target": "19-12_2f_secretary-room-center-reversed"
+        },
+        {
+          "yaw": 0.10783339074211717,
+          "pitch": 0.38237983203675086,
+          "rotation": 0,
+          "target": "10-07_2f_technical-division-entrance-02"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "9-06_2f_technical-division-entrance-01-reversed",
+      "name": "06_2F_Technical-Division-Entrance-01-reversed",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": -2.9034924827806137,
+        "pitch": 0.0586092877246287,
+        "fov": 1.3860279694857303
+      },
+      "linkHotspots": [
+        {
+          "yaw": 0.13067309029965557,
+          "pitch": 0.2726689582673245,
+          "rotation": 0,
+          "target": "10-07_2f_technical-division-entrance-02"
+        },
+        {
+          "yaw": -0.8893483725513747,
+          "pitch": 0.21628079003901135,
+          "rotation": 0,
+          "target": "6-05_2f_conference-room-entrance-02"
+        },
+        {
+          "yaw": 0.9382335054897162,
+          "pitch": 0.1501153922848637,
+          "rotation": 0,
+          "target": "19-12_2f_secretary-room-center-reversed"
+        },
+        {
+          "yaw": -2.9365171099632548,
+          "pitch": 0.2391017458643283,
+          "rotation": 0,
+          "target": "0-01_2f_hallway_stairwell"
+        },
+        {
+          "yaw": 2.874782293496289,
+          "pitch": 0.0979784195306248,
+          "rotation": 0,
+          "target": "20-13_2f_secretary-room-entrance"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "10-07_2f_technical-division-entrance-02",
+      "name": "07_2F_Technical-Division-Entrance-02",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": 0.08572966783335545,
+        "pitch": 0.19817322329993026,
+        "fov": 1.3860279694857303
+      },
+      "linkHotspots": [
+        {
+          "yaw": -0.7602433213354569,
+          "pitch": 0.1636390588283767,
+          "rotation": 0,
+          "target": "12-08_2f_technical-division-left-side-entrance"
+        },
+        {
+          "yaw": 1.623671719273574,
+          "pitch": 0.21725057928212266,
+          "rotation": 0,
+          "target": "15-10_2f_technical-division-right-side-entrance"
+        },
+        {
+          "yaw": 3.0887582349068357,
+          "pitch": 0.08359954787598411,
+          "rotation": 0,
+          "target": "9-06_2f_technical-division-entrance-01-reversed"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "11-07_2f_technical-division-entrance-02-reversed",
+      "name": "07_2F_Technical-Division-Entrance-02-reversed",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": 1.7277539882997264,
+        "pitch": 0.00858644650089424,
+        "fov": 1.3860279694857303
+      },
+      "linkHotspots": [
+        {
+          "yaw": -0.7709074678502592,
+          "pitch": 0.1680001970521552,
+          "rotation": 0,
+          "target": "12-08_2f_technical-division-left-side-entrance"
+        },
+        {
+          "yaw": 1.5916174232522717,
+          "pitch": 0.20628494673671227,
+          "rotation": 0,
+          "target": "15-10_2f_technical-division-right-side-entrance"
+        },
+        {
+          "yaw": 3.0890765083806855,
+          "pitch": 0.039620688731188736,
+          "rotation": 0,
+          "target": "9-06_2f_technical-division-entrance-01-reversed"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "12-08_2f_technical-division-left-side-entrance",
+      "name": "08_2F_Technical-Division-Left-Side-Entrance",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": 0,
+        "pitch": 0,
+        "fov": 1.3860279694857303
+      },
+      "linkHotspots": [
+        {
+          "yaw": -0.014242885440793884,
+          "pitch": 0.258960206860154,
+          "rotation": 0,
+          "target": "14-09_2f_technical-division-left-side-corner"
+        },
+        {
+          "yaw": 2.12565983489481,
+          "pitch": 0.19493019623093488,
+          "rotation": 0,
+          "target": "11-07_2f_technical-division-entrance-02-reversed"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "13-08_2f_technical-division-left-side-entrance-reversed",
+      "name": "08_2F_Technical-Division-Left-Side-Entrance-reversed",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": 1.8022152881693172,
+        "pitch": 0.20393558974558879,
+        "fov": 1.3860279694857303
+      },
+      "linkHotspots": [
+        {
+          "yaw": 0.019553119974689892,
+          "pitch": 0.26430180542533144,
+          "rotation": 0,
+          "target": "14-09_2f_technical-division-left-side-corner"
+        },
+        {
+          "yaw": 2.246363182156271,
+          "pitch": 0.2001791838848046,
+          "rotation": 0,
+          "target": "10-07_2f_technical-division-entrance-02"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "14-09_2f_technical-division-left-side-corner",
+      "name": "09_2F_Technical-Division-Left-Side-Corner",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": -2.5956820225671997,
+        "pitch": 0.09653806528005049,
+        "fov": 1.3860279694857303
+      },
+      "linkHotspots": [
+        {
+          "yaw": -0.10738232694894556,
+          "pitch": 0.24477681905091764,
+          "rotation": 0,
+          "target": "13-08_2f_technical-division-left-side-entrance-reversed"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "15-10_2f_technical-division-right-side-entrance",
+      "name": "10_2F_Technical-Division-Right-Side-Entrance",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "pitch": 0,
+        "yaw": 0,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [
+        {
+          "yaw": -1.5622350439545727,
+          "pitch": 0.15859953971810015,
+          "rotation": 0,
+          "target": "10-07_2f_technical-division-entrance-02"
+        },
+        {
+          "yaw": 0.00854610800107558,
+          "pitch": 0.19133924441568695,
+          "rotation": 0,
+          "target": "17-11_2f_technical-division-right-corner"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "16-10_2f_technical-division-right-side-entrance-reversed",
+      "name": "10_2F_Technical-Division-Right-Side-Entrance-reversed",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": -1.5277336259469525,
+        "pitch": -0.007135043722994894,
+        "fov": 1.3860279694857303
+      },
+      "linkHotspots": [
+        {
+          "yaw": -0.0031493075696218398,
+          "pitch": 0.1764069864789839,
+          "rotation": 0,
+          "target": "17-11_2f_technical-division-right-corner"
+        },
+        {
+          "yaw": -1.544803525102619,
+          "pitch": 0.16766154357673457,
+          "rotation": 0,
+          "target": "10-07_2f_technical-division-entrance-02"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "17-11_2f_technical-division-right-corner",
+      "name": "11_2F_Technical-Division-Right-Corner",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": -0.9260097967800114,
+        "pitch": 0.26115074746646627,
+        "fov": 1.3860279694857303
+      },
+      "linkHotspots": [
+        {
+          "yaw": 3.017740103806222,
+          "pitch": 0.1625689239289798,
+          "rotation": 0,
+          "target": "16-10_2f_technical-division-right-side-entrance-reversed"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "18-12_2f_secretary-room-center",
+      "name": "12_2F_Secretary-Room-Center",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "pitch": 0,
+        "yaw": 0,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [
+        {
+          "yaw": -2.578195050739371,
+          "pitch": 0.17338143684224328,
+          "rotation": 0,
+          "target": "21-13_2f_secretary-room-entrance-reversed"
+        },
+        {
+          "yaw": -0.8561820367501198,
+          "pitch": 0.24671845013399718,
+          "rotation": 0,
+          "target": "8-06_2f_technical-division-entrance-01"
+        },
+        {
+          "yaw": 2.3511856881714683,
+          "pitch": 0.06431236001201235,
+          "rotation": 0,
+          "target": "22-14_2f_director-office-entrance"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "19-12_2f_secretary-room-center-reversed",
+      "name": "12_2F_Secretary-Room-Center-reversed",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": 3.091280914571475,
+        "pitch": 0.13426468961819005,
+        "fov": 1.3860279694857303
+      },
+      "linkHotspots": [
+        {
+          "yaw": -2.619365109194817,
+          "pitch": 0.13612264454069845,
+          "rotation": 0,
+          "target": "21-13_2f_secretary-room-entrance-reversed"
+        },
+        {
+          "yaw": -0.8707200110532494,
+          "pitch": 0.2072238912648281,
+          "rotation": 0,
+          "target": "8-06_2f_technical-division-entrance-01"
+        },
+        {
+          "yaw": 2.4517120168867272,
+          "pitch": 0.059607909305665174,
+          "rotation": 0,
+          "target": "22-14_2f_director-office-entrance"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "20-13_2f_secretary-room-entrance",
+      "name": "13_2F_Secretary-Room-Entrance",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": -0.4339609686926842,
+        "pitch": 0.14735899222817395,
+        "fov": 1.3860279694857303
+      },
+      "linkHotspots": [
+        {
+          "yaw": -1.8762431001285638,
+          "pitch": 0.04013701073879972,
+          "rotation": 0,
+          "target": "8-06_2f_technical-division-entrance-01"
+        },
+        {
+          "yaw": -0.9630692066211441,
+          "pitch": 0.32947799183247106,
+          "rotation": 0,
+          "target": "18-12_2f_secretary-room-center"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "21-13_2f_secretary-room-entrance-reversed",
+      "name": "13_2F_Secretary-Room-Entrance-reversed",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": -2.862606179692847,
+        "pitch": 0.13421743700945754,
+        "fov": 1.3860279694857303
+      },
+      "linkHotspots": [
+        {
+          "yaw": -1.8753469776459664,
+          "pitch": 0.08636263435765557,
+          "rotation": 0,
+          "target": "8-06_2f_technical-division-entrance-01"
+        },
+        {
+          "yaw": 2.169845835889607,
+          "pitch": 0.05726913389730015,
+          "rotation": 0,
+          "target": "3-03_2f_conference-room-entrance-01"
+        },
+        {
+          "yaw": 2.2030838552495116,
+          "pitch": 0.39776749773635167,
+          "rotation": 0,
+          "target": "0-01_2f_hallway_stairwell"
+        },
+        {
+          "yaw": -1.0077395458391116,
+          "pitch": 0.21391591308072222,
+          "rotation": 0,
+          "target": "18-12_2f_secretary-room-center"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "22-14_2f_director-office-entrance",
+      "name": "14_2F_Director-Office-Entrance",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "pitch": 0,
+        "yaw": 0,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [
+        {
+          "yaw": -0.48279961017523476,
+          "pitch": 0.19189142840465223,
+          "rotation": 0,
+          "target": "24-15_2f_director-office-center"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "23-14_2f_director-office-entrance-reversed",
+      "name": "14_2F_Director-Office-Entrance-reversed",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": -1.9548280197835233,
+        "pitch": 0.17451888015692063,
+        "fov": 1.3860279694857303
+      },
+      "linkHotspots": [
+        {
+          "yaw": -0.5274991432603287,
+          "pitch": 0.3412568640871019,
+          "rotation": 0,
+          "target": "24-15_2f_director-office-center"
+        },
+        {
+          "yaw": -2.9650144488590904,
+          "pitch": 0.024953984380051253,
+          "rotation": 0,
+          "target": "21-13_2f_secretary-room-entrance-reversed"
+        },
+        {
+          "yaw": -2.1689163066588346,
+          "pitch": 0.5413069589483701,
+          "rotation": 0,
+          "target": "18-12_2f_secretary-room-center"
+        },
+        {
+          "yaw": -2.0773389096960084,
+          "pitch": 0.07235865089639937,
+          "rotation": 0,
+          "target": "8-06_2f_technical-division-entrance-01"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "24-15_2f_director-office-center",
+      "name": "15_2F_Director-Office-Center",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": 0.1739294531118052,
+        "pitch": 0.009513391630662227,
+        "fov": 1.3860279694857303
+      },
+      "linkHotspots": [
+        {
+          "yaw": -2.0606876763521917,
+          "pitch": 0.13740994614799007,
+          "rotation": 0,
+          "target": "23-14_2f_director-office-entrance-reversed"
+        }
+      ],
+      "infoHotspots": []
+    }
    ],
    "name": "CHED Project",
    "settings": {
