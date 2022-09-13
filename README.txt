@@ -26,3 +26,7 @@ Customization
 This application may be used as is or may be further developed and customized.
 You can change the application by editing the Javascript, CSS and `index.html`
 files.
+
+Project Sheet
+------------
+https://docs.google.com/spreadsheets/d/16Z3nF9iTgkyMKksU0keDvgcvHukZs-f2txR_EW_-NwE/edit#gid=0
