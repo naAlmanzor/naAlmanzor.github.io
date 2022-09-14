@@ -115,12 +115,12 @@
         var element = createHotspotElement(hotspot, elementImg);
         scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch}, {perspective: {extraTransforms: "rotateX(70deg)"}});
       }
-      else if(hotspot.target.includes("0-01_2f_hallway_stairwell")){
+      else if(hotspot.target.includes("0-01_2f_hallway_stairwell") && data.id.includes("1f")){
         elementImg = "stair-up";
         var element = createHotspotElement(hotspot, elementImg);
         scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch});
       } //12-09_1f_hallway-corner
-      else if(hotspot.target.includes("12-09_1f_hallway-corner")){
+      else if(hotspot.target.includes("12-09_1f_hallway-corner") && data.id.includes("2f")){
         elementImg = "stair-down";
         var element = createHotspotElement(hotspot, elementImg);
         scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch});
