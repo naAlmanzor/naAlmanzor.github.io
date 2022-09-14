@@ -102,13 +102,19 @@
 
       // Image will depend on the targeted room
       if (hotspot.target.includes("front-side") || hotspot.target.includes("back-side") 
-      || hotspot.target.includes("center-room") || hotspot.target.includes("conference-room-center")){
+      || hotspot.target.includes("center-room") || hotspot.target.includes("conference-room-center") || hotspot.target.includes("secretary-room-center") || hotspot.target.includes("director-office-center")
+      || hotspot.target.includes("center-reversed")){
         elementImg = "link-rooms";
         var element = createHotspotElement(hotspot, elementImg);
         scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch});
       }
       else if(hotspot.target.includes("entrance")){
         elementImg = "entrance";
+        var element = createHotspotElement(hotspot, elementImg);
+        scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch});
+      }
+      else if(hotspot.target.includes("outside")){
+        elementImg = "link-rooms";
         var element = createHotspotElement(hotspot, elementImg);
         scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch});
       }
@@ -131,7 +137,7 @@
           scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch},{perspective: {extraTransforms: "rotateX(30deg)"}});
         }
         else if (data.id.includes("lobby-corner")){
-          scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch},{perspective: {extraTransforms: "rotateX(40deg)"}});
+          scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch},{perspective: {extraTransforms: "rotateX(30deg)"}});
         }
         else{
           scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch},{perspective: {extraTransforms: "rotateX(70deg)"}});
@@ -142,11 +148,11 @@
         elementImg = "stair-up";
         var element = createHotspotElement(hotspot, elementImg);
         scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch});
-      } //12-09_1f_hallway-corner
+      }
       else if(hotspot.target.includes("12-09_1f_hallway-corner") && data.id.includes("2f")){
         elementImg = "stair-down";
         var element = createHotspotElement(hotspot, elementImg);
-        scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch});
+        scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch},{perspective: {extraTransforms: "rotateX(20deg)"}});
       }
       else{
         elementImg = "arrow";
