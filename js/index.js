@@ -103,13 +103,22 @@
       // Image will depend on the targeted room
       if (hotspot.target.includes("front-side") || hotspot.target.includes("back-side") 
       || hotspot.target.includes("center-room") || hotspot.target.includes("conference-room-center") || hotspot.target.includes("secretary-room-center") || hotspot.target.includes("director-office-center")
-      || hotspot.target.includes("center-reversed")){
+      || hotspot.target.includes("division-center-reversed")){
         elementImg = "link-rooms";
         var element = createHotspotElement(hotspot, elementImg);
         scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch});
       }
       else if(hotspot.target.includes("entrance")){
-        elementImg = "entrance";
+
+        if(hotspot.target.includes("reversed")){
+          elementImg = "exit"  
+        }
+        else if(hotspot.target.includes("main")){
+          elementImg = "entrance"
+        }
+        else{
+          elementImg = "entrance-room";
+        }
         var element = createHotspotElement(hotspot, elementImg);
         scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch});
       }
