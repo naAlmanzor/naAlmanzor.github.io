@@ -80,6 +80,10 @@
     if (data.id.includes("2f")){
       var floor = "2F";
     }
+
+    if (data.id.includes("3f")){
+      var floor = "3F";
+    }
     var urlPrefix = "./assets/"+floor.toString();
     var source = Marzipano.ImageUrlSource.fromString(
       urlPrefix + "/" + data.id + "/{z}/{f}/{y}/{x}.jpg",
@@ -101,6 +105,8 @@
       var elementImg = ""
 
       // Image will depend on the targeted room
+
+      // for areas within rooms
       if (hotspot.target.includes("front-side") || hotspot.target.includes("back-side") 
       || hotspot.target.includes("center-room") || hotspot.target.includes("conference-room-center") || hotspot.target.includes("secretary-room-center") || hotspot.target.includes("director-office-center")
       || hotspot.target.includes("division-center-reversed")){
@@ -108,6 +114,8 @@
         var element = createHotspotElement(hotspot, elementImg);
         scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch});
       }
+
+      // for entrances
       else if(hotspot.target.includes("entrance")){
 
         if(hotspot.target.includes("reversed")){
@@ -127,7 +135,7 @@
         var element = createHotspotElement(hotspot, elementImg);
         scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch});
       }
-      else if(hotspot.target.includes("lobby-corner")){
+      else if(hotspot.target.includes("lobby-corner") ||  hotspot.target.includes("cubicles") && !hotspot.target.includes("entrance") || hotspot.target.includes("stage-center") ){
         elementImg = "link-rooms";
         var element = createHotspotElement(hotspot, elementImg);
         if (data.id.includes("administration-entrance")){
@@ -138,6 +146,8 @@
         }
         
       }
+
+      // for the center lobby
       else if(hotspot.target.includes("lobby-center")){
         elementImg = "arrow";
         var element = createHotspotElement(hotspot, elementImg);
@@ -153,15 +163,48 @@
         }
         
       }
-      else if(hotspot.target.includes("0-01_2f_hallway_stairwell") && data.id.includes("1f")){
-        elementImg = "stair-up";
-        var element = createHotspotElement(hotspot, elementImg);
-        scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch});
-      }
+
+      // for floor levels
+
+      // 1st floor link to 2nd floor
       else if(hotspot.target.includes("12-09_1f_hallway-corner") && data.id.includes("2f")){
         elementImg = "stair-down";
         var element = createHotspotElement(hotspot, elementImg);
         scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch},{perspective: {extraTransforms: "rotateX(20deg)"}});
+      }
+
+      // 2nd floor
+      else if(hotspot.target.includes("0-01_2f_hallway_stairwell")){
+        
+        // link to 1st floor
+        if (data.id.includes("1f")){
+          elementImg = "stair-up";
+        }
+
+        // link to wnd floor
+        else if (data.id.includes("3f")){
+          elementImg = "stair-down";
+        }
+        var element = createHotspotElement(hotspot, elementImg);
+        scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch});
+      }
+
+      // 3rd floor
+      else if(hotspot.target.includes("0-01_3f_stairwell")){
+        
+        // link to 2nd floor
+        if (data.id.includes("2f")){
+          elementImg = "stair-up";
+          var element = createHotspotElement(hotspot, elementImg);
+          scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch},{perspective: {extraTransforms: "rotateX(20deg)"}});
+        }
+
+        // exception, changes only the links within 3rd floor
+        else if (data.id.includes("3f")){
+          elementImg = "link-rooms";
+          var element = createHotspotElement(hotspot, elementImg);
+          scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch},{perspective: {extraTransforms: "rotateX(35deg)"}});
+        }
       }
       else{
         elementImg = "arrow";
