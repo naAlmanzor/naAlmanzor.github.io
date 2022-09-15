@@ -139,10 +139,10 @@
         elementImg = "link-rooms";
         var element = createHotspotElement(hotspot, elementImg);
         if (data.id.includes("administration-entrance")){
-          scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch}, {perspective: {extraTransforms: "rotateX(20deg)"}});
+          scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch}, {perspective: {extraTransforms: "rotateX(0deg)"}});
         }
         else{
-          scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch}, {perspective: {extraTransforms: "rotateX(70deg)"}});
+          scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch}, {perspective: {extraTransforms: "rotateX(0deg)"}});
         }
         
       }
@@ -156,7 +156,7 @@
           scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch},{perspective: {extraTransforms: "rotateX(30deg)"}});
         }
         else if (data.id.includes("lobby-corner")){
-          scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch},{perspective: {extraTransforms: "rotateX(30deg)"}});
+          scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch},{perspective: {extraTransforms: "rotateX(70deg)"}});
         }
         else{
           scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch},{perspective: {extraTransforms: "rotateX(70deg)"}});
@@ -214,7 +214,7 @@
         else if (data.id.includes("3f")){
           elementImg = "link-rooms";
           var element = createHotspotElement(hotspot, elementImg);
-          scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch},{perspective: {extraTransforms: "rotateX(35deg)"}});
+          scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch},{perspective: {extraTransforms: "rotateX(0deg)"}});
         }
       }
       else{
