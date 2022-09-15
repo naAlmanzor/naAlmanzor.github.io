@@ -80,6 +80,10 @@
     if (data.id.includes("2f")){
       var floor = "2F";
     }
+
+    if (data.id.includes("3f")){
+      var floor = "3F";
+    }
     var urlPrefix = "./assets/"+floor.toString();
     var source = Marzipano.ImageUrlSource.fromString(
       urlPrefix + "/" + data.id + "/{z}/{f}/{y}/{x}.jpg",
@@ -101,43 +105,119 @@
       var elementImg = ""
 
       // Image will depend on the targeted room
+
+      // for areas within rooms
       if (hotspot.target.includes("front-side") || hotspot.target.includes("back-side") 
-      || hotspot.target.includes("center-room") ){
+      || hotspot.target.includes("center-room") || hotspot.target.includes("conference-room-center") || hotspot.target.includes("secretary-room-center") || hotspot.target.includes("director-office-center")
+      || hotspot.target.includes("division-center-reversed")){
         elementImg = "link-rooms";
+        var element = createHotspotElement(hotspot, elementImg);
+        scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch});
       }
+
+      // for entrances
       else if(hotspot.target.includes("entrance")){
-        elementImg = "entrance";
+
+        if(hotspot.target.includes("reversed")){
+          elementImg = "exit"  
+        }
+        else if(hotspot.target.includes("main")){
+          elementImg = "entrance"
+        }
+        else{
+          elementImg = "entrance-room";
+        }
         var element = createHotspotElement(hotspot, elementImg);
         scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch});
       }
-      else if(hotspot.target.includes("lobby-corner")){
+      else if(hotspot.target.includes("outside")){
         elementImg = "link-rooms";
         var element = createHotspotElement(hotspot, elementImg);
-        scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch}, {perspective: {extraTransforms: "rotateX(70deg)"}});
-      }
-      else if(hotspot.target.includes("0-01_2f_hallway_stairwell") && data.id.includes("1f")){
-        elementImg = "stair-up";
-        var element = createHotspotElement(hotspot, elementImg);
         scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch});
-      } //12-09_1f_hallway-corner
+      }
+      else if(hotspot.target.includes("lobby-corner") ||  hotspot.target.includes("cubicles") && !hotspot.target.includes("entrance") || hotspot.target.includes("stage-center") ){
+        elementImg = "link-rooms";
+        var element = createHotspotElement(hotspot, elementImg);
+        if (data.id.includes("administration-entrance")){
+          scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch}, {perspective: {extraTransforms: "rotateX(20deg)"}});
+        }
+        else{
+          scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch}, {perspective: {extraTransforms: "rotateX(70deg)"}});
+        }
+        
+      }
+
+      // for the center lobby
+      else if(hotspot.target.includes("lobby-center")){
+        elementImg = "arrow";
+        var element = createHotspotElement(hotspot, elementImg);
+
+        if (data.id.includes("records-entrance")){
+          scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch},{perspective: {extraTransforms: "rotateX(30deg)"}});
+        }
+        else if (data.id.includes("lobby-corner")){
+          scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch},{perspective: {extraTransforms: "rotateX(30deg)"}});
+        }
+        else{
+          scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch},{perspective: {extraTransforms: "rotateX(70deg)"}});
+        }
+        
+      }
+
+      // for floor levels
+
+      // 1st floor link to 2nd floor
       else if(hotspot.target.includes("12-09_1f_hallway-corner") && data.id.includes("2f")){
         elementImg = "stair-down";
         var element = createHotspotElement(hotspot, elementImg);
-        scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch});
-      }//conference-room-center
-      else if(hotspot.target.includes("conference-room-center")){
-        elementImg = "link-rooms";
+        scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch},{perspective: {extraTransforms: "rotateX(20deg)"}});
+      }
+
+      // 2nd floor
+      else if(hotspot.target.includes("0-01_2f_hallway_stairwell")){
+        
+        // link to 1st floor
+        if (data.id.includes("1f")){
+          elementImg = "stair-up";
+        }
+
+        // link to wnd floor
+        else if (data.id.includes("3f")){
+          elementImg = "stair-down";
+        }
         var element = createHotspotElement(hotspot, elementImg);
         scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch});
+      }
+
+      // 3rd floor
+      else if(hotspot.target.includes("0-01_3f_stairwell")){
+        
+        // link to 2nd floor
+        if (data.id.includes("2f")){
+          elementImg = "stair-up";
+          var element = createHotspotElement(hotspot, elementImg);
+          scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch},{perspective: {extraTransforms: "rotateX(20deg)"}});
+        }
+
+        // exception, changes only the links within 3rd floor
+        else if (data.id.includes("3f")){
+          elementImg = "link-rooms";
+          var element = createHotspotElement(hotspot, elementImg);
+          scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch},{perspective: {extraTransforms: "rotateX(35deg)"}});
+        }
       }
       else{
         elementImg = "arrow";
         var element = createHotspotElement(hotspot, elementImg);
-        scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch}, {perspective: {extraTransforms: "rotateX(70deg)"}});
+        
+        if (data.id.includes("administration-entrance")){
+          scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch}, {perspective: {extraTransforms: "rotateX(0deg)"}});
+        }
+        
+        else{
+          scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch}, {perspective: {extraTransforms: "rotateX(70deg)"}});
+        }
       }
-      // Had to move this block to prevent non-floor icons from adjusting their rotation.
-      // var element = createHotspotElement(hotspot, elementImg);
-      // scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch}, {perspective: {extraTransforms: "rotateX(65deg)"}});
     }); 
 
     // Create info hotspots.
@@ -329,92 +409,10 @@
     // This prevents the view control logic from interfering with the hotspot.
     stopTouchAndScrollEventPropagation(wrapper);
 
-    // Create tooltip element.
-    // var tooltip = document.createElement('div');
-    // tooltip.classList.add('hotspot-tooltip');
-    // tooltip.classList.add('link-hotspot-tooltip');
-    // tooltip.innerHTML = findSceneDataById(hotspot.target).name;
-
     wrapper.appendChild(icon);
-    // wrapper.appendChild(tooltip);
 
     return wrapper;
   }
-
-  // function createInfoHotspotElement(hotspot) {
-
-  //   // Create wrapper element to hold icon and tooltip.
-  //   var wrapper = document.createElement('div');
-  //   wrapper.classList.add('hotspot');
-  //   wrapper.classList.add('info-hotspot');
-
-  //   // Create hotspot/tooltip header.
-  //   var header = document.createElement('div');
-  //   header.classList.add('info-hotspot-header');
-
-  //   // Create image element.
-  //   var iconWrapper = document.createElement('div');
-  //   iconWrapper.classList.add('info-hotspot-icon-wrapper');
-  //   var icon = document.createElement('img');
-  //   icon.src = './assets/icons/info.png';
-  //   icon.classList.add('info-hotspot-icon');
-  //   iconWrapper.appendChild(icon);
-
-  //   // Create title element.
-  //   var titleWrapper = document.createElement('div');
-  //   titleWrapper.classList.add('info-hotspot-title-wrapper');
-  //   var title = document.createElement('div');
-  //   title.classList.add('info-hotspot-title');
-  //   title.innerHTML = hotspot.title;
-  //   titleWrapper.appendChild(title);
-
-  //   // Create close element.
-  //   var closeWrapper = document.createElement('div');
-  //   closeWrapper.classList.add('info-hotspot-close-wrapper');
-  //   var closeIcon = document.createElement('img');
-  //   closeIcon.src = './assets/icons/close.png';
-  //   closeIcon.classList.add('info-hotspot-close-icon');
-  //   closeWrapper.appendChild(closeIcon);
-
-  //   // Construct header element.
-  //   header.appendChild(iconWrapper);
-  //   header.appendChild(titleWrapper);
-  //   header.appendChild(closeWrapper);
-
-  //   // Create text element.
-  //   var text = document.createElement('div');
-  //   text.classList.add('info-hotspot-text');
-  //   text.innerHTML = hotspot.text;
-
-  //   // Place header and text into wrapper element.
-  //   wrapper.appendChild(header);
-  //   wrapper.appendChild(text);
-
-  //   // Create a modal for the hotspot content to appear on mobile mode.
-  //   var modal = document.createElement('div');
-  //   modal.innerHTML = wrapper.innerHTML;
-  //   modal.classList.add('info-hotspot-modal');
-  //   document.body.appendChild(modal);
-
-  //   var toggle = function() {
-  //     wrapper.classList.toggle('visible');
-  //     modal.classList.toggle('visible');
-  //   };
-
-  //   // Show content when hotspot is clicked.
-  //   wrapper.querySelector('.info-hotspot-header').addEventListener('click', toggle);
-
-  //   // Hide content when close icon is clicked.
-  //   modal.querySelector('.info-hotspot-close-wrapper').addEventListener('click', toggle);
-
-  //   // Prevent touch and scroll events from reaching the parent element.
-  //   // This prevents the view control logic from interfering with the hotspot.
-  //   stopTouchAndScrollEventPropagation(wrapper);
-
-  //   return wrapper;
-  // }
-
-  // Prevent touch and scroll events from reaching the parent element.
   
   function createInfoHotspotElement(hotspot, type) {
     
