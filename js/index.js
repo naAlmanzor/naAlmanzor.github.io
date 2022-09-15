@@ -149,7 +149,7 @@
 
       // for the center lobby
       else if(hotspot.target.includes("lobby-center")){
-        elementImg = "arrow";
+        elementImg = "arrow-sd";
         var element = createHotspotElement(hotspot, elementImg);
 
         if (data.id.includes("records-entrance")){
@@ -179,14 +179,25 @@
         // link to 1st floor
         if (data.id.includes("1f")){
           elementImg = "stair-up";
+          var element = createHotspotElement(hotspot, elementImg);
+          scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch});
         }
 
         // link to wnd floor
         else if (data.id.includes("3f")){
           elementImg = "stair-down";
+          var element = createHotspotElement(hotspot, elementImg);
+          scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch});
         }
-        var element = createHotspotElement(hotspot, elementImg);
-        scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch});
+
+        //fallback
+        else {
+          elementImg = "arrow-sd";
+          var element = createHotspotElement(hotspot, elementImg);
+          scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch},{perspective: {extraTransforms: "rotateX(70deg)"}});
+        }
+        // var element = createHotspotElement(hotspot, elementImg);
+        // scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch});
       }
 
       // 3rd floor
@@ -207,7 +218,7 @@
         }
       }
       else{
-        elementImg = "arrow";
+        elementImg = "arrow-sd";
         var element = createHotspotElement(hotspot, elementImg);
         
         if (data.id.includes("administration-entrance")){

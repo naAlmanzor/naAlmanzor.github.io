@@ -689,7 +689,7 @@ var APP_DATA = {
        },
        "linkHotspots": [
          {
-           "yaw": 3.0125022902715566,
+           "yaw": 3.0825022902715566,
            "pitch": 0.19183986201926118,
            "rotation": 0,
            "target": "11-08_1f_hallway-center-reversed",
@@ -980,10 +980,22 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": 0.19683754826156985,
-          "pitch": 0.3231919001957966,
+          "yaw": 0.15756019250107656,
+          "pitch": 0.2667942143337889,
           "rotation": 0,
           "target": "0-01_2f_hallway_stairwell"
+        },
+        {
+          "yaw": -2.9560679027994166,
+          "pitch": 0.12651899384129806,
+          "rotation": 0,
+          "target": "8-06_2f_technical-division-entrance-01"
+        },
+        {
+          "yaw": -1.6063673247800025,
+          "pitch": 0.24274612607307233,
+          "rotation": 0,
+          "target": "20-13_2f_secretary-room-entrance"
         }
       ],
       "infoHotspots": []
@@ -1164,10 +1176,22 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": -0.7851290188059927,
-          "pitch": 0.14459616769714856,
+          "yaw": -0.7990349348410266,
+          "pitch": 0.13696488655294026,
           "rotation": 0,
           "target": "5-04_2f_conference-room-center"
+        },
+        {
+          "yaw": -2.450777702159911,
+          "pitch": 0.19754491335468316,
+          "rotation": 0,
+          "target": "9-06_2f_technical-division-entrance-01-reversed"
+        },
+        {
+          "yaw": -3.1086604857593674,
+          "pitch": 0.15203071447067273,
+          "rotation": 0,
+          "target": "18-12_2f_secretary-room-center"
         }
       ],
       "infoHotspots": []
@@ -1211,7 +1235,7 @@ var APP_DATA = {
           "yaw": -2.450777702159911,
           "pitch": 0.19754491335468316,
           "rotation": 0,
-          "target": "2-02_2f_hallway-center-reveresed"
+          "target": "9-06_2f_technical-division-entrance-01-reversed"
         },
         {
           "yaw": -3.1086604857593674,
@@ -1252,10 +1276,10 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": -2.8983595201300965,
-          "pitch": 0.37462749554581976,
+          "yaw": -2.9365171099632548,
+          "pitch": 0.3791017458643283,
           "rotation": 0,
-          "target": "1-02_2f_hallway-center"
+          "target": "2-02_2f_hallway-center-reveresed"
         },
         {
           "yaw": -0.952018188220924,
@@ -1327,9 +1351,9 @@ var APP_DATA = {
         },
         {
           "yaw": -2.9365171099632548,
-          "pitch": 0.2391017458643283,
+          "pitch": 0.3791017458643283,
           "rotation": 0,
-          "target": "0-01_2f_hallway_stairwell"
+          "target": "2-02_2f_hallway-center-reveresed"
         },
         {
           "yaw": 2.874782293496289,
@@ -1371,13 +1395,13 @@ var APP_DATA = {
       "linkHotspots": [
         {
           "yaw": -0.7602433213354569,
-          "pitch": 0.1636390588283767,
+          "pitch": 0.3536390588283767,
           "rotation": 0.4,
           "target": "12-08_2f_technical-division-left-side"
         },
         {
           "yaw": 1.623671719273574,
-          "pitch": 0.21725057928212266,
+          "pitch": 0.31725057928212266,
           "rotation": -1.2,
           "target": "15-10_2f_technical-division-right-side"
         },
@@ -1420,15 +1444,15 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": -0.7709074678502592,
-          "pitch": 0.1680001970521552,
-          "rotation": 0,
+          "yaw": -0.7602433213354569,
+          "pitch": 0.3536390588283767,
+          "rotation": 0.4,
           "target": "12-08_2f_technical-division-left-side"
         },
         {
-          "yaw": 1.5916174232522717,
-          "pitch": 0.20628494673671227,
-          "rotation": -0.5,
+          "yaw": 1.623671719273574,
+          "pitch": 0.31725057928212266,
+          "rotation": -1.2,
           "target": "15-10_2f_technical-division-right-side"
         },
         {
@@ -1521,9 +1545,9 @@ var APP_DATA = {
         },
         {
           "yaw": 2.246363182156271,
-          "pitch": 0.2001791838848046,
+          "pitch": 0.4101791838848046,
           "rotation": 0,
-          "target": "07_2F_Technical-Division-center-reversed"
+          "target": "11-07_2f_technical-division-center-reversed"
         }
       ],
       "infoHotspots": []
@@ -1559,7 +1583,7 @@ var APP_DATA = {
       "linkHotspots": [
         {
           "yaw": -0.10738232694894556,
-          "pitch": 0.24477681905091764,
+          "pitch": 0.44477681905091764,
           "rotation": 0,
           "target": "13-08_2f_technical-division-left-side-reversed"
         }
@@ -1603,7 +1627,7 @@ var APP_DATA = {
         },
         {
           "yaw": 0.00854610800107558,
-          "pitch": 0.19133924441568695,
+          "pitch": 0.34133924441568695,
           "rotation": 0,
           "target": "17-11_2f_technical-division-right-corner"
         }
@@ -1685,8 +1709,8 @@ var APP_DATA = {
       "linkHotspots": [
         {
           "yaw": 3.017740103806222,
-          "pitch": 0.1625689239289798,
-          "rotation": 0,
+          "pitch": 0.3625689239289798,
+          "rotation": 1,
           "target": "16-10_2f_technical-division-right-side-reversed"
         }
       ],
