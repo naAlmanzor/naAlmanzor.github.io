@@ -436,7 +436,7 @@
         var iconWrapper = document.createElement('div');
         iconWrapper.classList.add('info-hotspot-icon-wrapper');
         var icon = document.createElement('img');
-        icon.src = './assets/icons/info.png';
+        icon.src = './assets/icons/image.png';
         icon.classList.add('info-hotspot-icon');
         iconWrapper.appendChild(icon);
         header.appendChild(iconWrapper);
