@@ -365,7 +365,6 @@
 
   function toggleSceneList() {
     sceneListElement.classList.toggle('enabled');
-    sceneListToggleElement.classList.toggle('enabled');
   }
 
   function startAutorotate() {
