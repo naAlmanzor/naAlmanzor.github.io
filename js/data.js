@@ -2067,7 +2067,7 @@ var APP_DATA = {
     // 3rd floor
     {
       "id": "0-01_3f_stairwell",
-      "name": "01_3F_Stairwell",
+      "name": "Stairwell (3F)",
       "levels": [
         {
           "tileSize": 256,
@@ -2111,7 +2111,7 @@ var APP_DATA = {
     },
     {
       "id": "1-02_3f_cubicles-entrance",
-      "name": "02_3F_Cubicles-Entrance",
+      "name": "Cubicles (Entrance)",
       "levels": [
         {
           "tileSize": 256,
@@ -2155,7 +2155,7 @@ var APP_DATA = {
     },
     {
       "id": "2-02_3f_cubicles-entrance_reversed",
-      "name": "02_3F_Cubicles-Entrance_reversed",
+      "name": "Cubicles (Entrance)",
       "levels": [
         {
           "tileSize": 256,
@@ -2199,7 +2199,7 @@ var APP_DATA = {
     },
     {
       "id": "3-03_3f_cubicles",
-      "name": "03_3F_Cubicles",
+      "name": "Cubicles",
       "levels": [
         {
           "tileSize": 256,
@@ -2243,7 +2243,7 @@ var APP_DATA = {
     },
     {
       "id": "4-03_3f_cubicles_reversed",
-      "name": "03_3F_Cubicles_reversed",
+      "name": "Cubicles",
       "levels": [
         {
           "tileSize": 256,
@@ -2287,7 +2287,7 @@ var APP_DATA = {
     },
     {
       "id": "5-04_3f_stage-entrance",
-      "name": "04_3F_Stage-Entrance",
+      "name": "Stage (Entrance)",
       "levels": [
         {
           "tileSize": 256,
@@ -2331,7 +2331,7 @@ var APP_DATA = {
     },
     {
       "id": "6-04_3f_stage-entrance_reversed",
-      "name": "04_3F_Stage-Entrance_reversed",
+      "name": "Stage (Entrance)",
       "levels": [
         {
           "tileSize": 256,
@@ -2375,7 +2375,7 @@ var APP_DATA = {
     },
     {
       "id": "7-05_3f_stage-center",
-      "name": "05_3F_Stage-Center",
+      "name": "Stage",
       "levels": [
         {
           "tileSize": 256,
