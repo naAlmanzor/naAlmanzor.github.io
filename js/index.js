@@ -234,15 +234,25 @@
     // Create info hotspots.
     data.infoHotspots.forEach(function(hotspot) {
       var elementImg = ""
+      var header_color = ""
+      var close_color = ""
+      var text_color = ""
 
       // Image will depend on the targeted room
       if (hotspot.title.includes("Restricted")){
         elementImg = "restricted";
+        header_color = "#f23a3a"
+        close_color = "#684e4e"
+        text_color = "#543a3a"
+
       }
       else{
         elementImg = "info";
+        header_color = "#677383"
+        close_color = "#4e5868"
+        text_color = "#3a4454"
       }
-      var element = createInfoHotspotElement(hotspot, elementImg);
+      var element = createInfoHotspotElement(hotspot, elementImg, header_color, close_color, text_color);
       scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch });
     });
     
@@ -424,7 +434,7 @@
     return wrapper;
   }
   
-  function createInfoHotspotElement(hotspot, type) {
+  function createInfoHotspotElement(hotspot, type, header_color, close_color, text_color) {
     
     if(hotspot.hasOwnProperty('popup')){
         var wrapper = document.createElement('div');
@@ -453,7 +463,7 @@
       span.onclick = function() {modal.style.display = "none";}
 
       return wrapper;
-      }
+    }
 
     else{
       // Create wrapper element to hold icon and tooltip.
@@ -525,6 +535,9 @@
       // This prevents the view control logic from interfering with the hotspot.
       stopTouchAndScrollEventPropagation(wrapper);
 
+      wrapper.querySelector('.info-hotspot-header').style.backgroundColor = header_color;
+      wrapper.querySelector('.info-hotspot-close-wrapper').style.backgroundColor = close_color;
+      wrapper.querySelector('.info-hotspot-text').style.backgroundColor = text_color;
       return wrapper;
     }
   }
