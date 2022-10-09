@@ -248,9 +248,9 @@
       }
       else{
         elementImg = "info";
-        header_color = "#677383"
-        close_color = "#4e5868"
-        text_color = "#3a4454"
+        header_color = "#3e629b"
+        close_color = "#1b3359"
+        text_color = "#374761"
       }
       var element = createInfoHotspotElement(hotspot, elementImg, header_color, close_color, text_color);
       scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch });
@@ -514,6 +514,11 @@
       wrapper.appendChild(header);
       wrapper.appendChild(text);
 
+      // Changes color for info-hotspots depending on the hotspot
+      wrapper.querySelector('.info-hotspot-header').style.backgroundColor = header_color;
+      wrapper.querySelector('.info-hotspot-close-wrapper').style.backgroundColor = close_color;
+      wrapper.querySelector('.info-hotspot-text').style.backgroundColor = text_color;
+
       // Create a modal for the hotspot content to appear on mobile mode.
       var modal = document.createElement('div');
       modal.innerHTML = wrapper.innerHTML;
@@ -535,9 +540,7 @@
       // This prevents the view control logic from interfering with the hotspot.
       stopTouchAndScrollEventPropagation(wrapper);
 
-      wrapper.querySelector('.info-hotspot-header').style.backgroundColor = header_color;
-      wrapper.querySelector('.info-hotspot-close-wrapper').style.backgroundColor = close_color;
-      wrapper.querySelector('.info-hotspot-text').style.backgroundColor = text_color;
+     
       return wrapper;
     }
   }
