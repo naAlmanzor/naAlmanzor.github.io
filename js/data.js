@@ -846,7 +846,7 @@ var APP_DATA = {
 
      {
       "id": "0-01_2f_hallway_stairwell",
-      "name": "01_2F_Hallway_Stairwell",
+      "name": "Stairwell (2F)",
       "levels": [
         {
           "tileSize": 256,
@@ -902,7 +902,7 @@ var APP_DATA = {
     },
     {
       "id": "1-02_2f_hallway-center",
-      "name": "02_2F_Hallway-Center",
+      "name": "Hallway",
       "levels": [
         {
           "tileSize": 256,
@@ -952,7 +952,7 @@ var APP_DATA = {
     },
     {
       "id": "2-02_2f_hallway-center-reveresed",
-      "name": "02_2F_Hallway-Center-reveresed",
+      "name": "Hallway",
       "levels": [
         {
           "tileSize": 256,
@@ -1002,7 +1002,7 @@ var APP_DATA = {
     },
     {
       "id": "3-03_2f_conference-room-entrance-01",
-      "name": "03_2F_Conference-Room-Entrance-01",
+      "name": "Conference Room (Entrance)",
       "levels": [
         {
           "tileSize": 256,
@@ -1052,7 +1052,7 @@ var APP_DATA = {
     },
     {
       "id": "4-03_2f_conference-room-entrance-01-reversed",
-      "name": "03_2F_Conference-Room-Entrance-01-reversed",
+      "name": "Conference Room (Entrance)",
       "levels": [
         {
           "tileSize": 256,
@@ -1146,7 +1146,7 @@ var APP_DATA = {
     },
     {
       "id": "6-05_2f_conference-room-entrance-02",
-      "name": "05_2F_Conference-Room-Entrance-02",
+      "name": "Conference Room (Entrance)",
       "levels": [
         {
           "tileSize": 256,
@@ -1196,7 +1196,7 @@ var APP_DATA = {
     },
     {
       "id": "7-05_2f_conference-room-entrance-02-reversed",
-      "name": "05_2F_Conference-Room-Entrance-02-reversed",
+      "name": "Conference Room (Entrance)",
       "levels": [
         {
           "tileSize": 256,
@@ -1246,7 +1246,7 @@ var APP_DATA = {
     },
     {
       "id": "8-06_2f_technical-division-entrance-01",
-      "name": "06_2F_Technical-Division-Entrance-01",
+      "name": "Technical Division (Entrance)",
       "levels": [
         {
           "tileSize": 256,
@@ -1286,12 +1286,6 @@ var APP_DATA = {
           "target": "6-05_2f_conference-room-entrance-02"
         },
         {
-          "yaw": 0.9088580852346855,
-          "pitch": 0.11201205604581155,
-          "rotation": 0,
-          "target": "19-12_2f_secretary-room-center-reversed"
-        },
-        {
           "yaw": 0.10783339074211717,
           "pitch": 0.38237983203675086,
           "rotation": 0,
@@ -1302,7 +1296,7 @@ var APP_DATA = {
     },
     {
       "id": "9-06_2f_technical-division-entrance-01-reversed",
-      "name": "06_2F_Technical-Division-Entrance-01-reversed",
+      "name": "Technical Division (Entrance)",
       "levels": [
         {
           "tileSize": 256,
@@ -1342,12 +1336,6 @@ var APP_DATA = {
           "target": "6-05_2f_conference-room-entrance-02"
         },
         {
-          "yaw": 0.9382335054897162,
-          "pitch": 0.1501153922848637,
-          "rotation": 0,
-          "target": "19-12_2f_secretary-room-center-reversed"
-        },
-        {
           "yaw": -2.9365171099632548,
           "pitch": 0.3791017458643283,
           "rotation": 0,
@@ -1364,7 +1352,7 @@ var APP_DATA = {
     },
     {
       "id": "10-07_2f_technical-division-center-room",
-      "name": "07_2F_Technical-division-center-room",
+      "name": "Technical Division (Center)",
       "levels": [
         {
           "tileSize": 256,
@@ -1414,7 +1402,7 @@ var APP_DATA = {
     },
     {
       "id": "11-07_2f_technical-division-center-reversed",
-      "name": "07_2F_Technical-Division-center-reversed",
+      "name": "Technical Division (Center)",
       "levels": [
         {
           "tileSize": 256,
@@ -1464,7 +1452,7 @@ var APP_DATA = {
     },
     {
       "id": "12-08_2f_technical-division-left-side",
-      "name": "08_2F_Technical-Division-Left-Side",
+      "name": "Technical Division",
       "levels": [
         {
           "tileSize": 256,
@@ -1508,7 +1496,7 @@ var APP_DATA = {
     },
     {
       "id": "13-08_2f_technical-division-left-side-reversed",
-      "name": "08_2F_Technical-Division-Left-Side-reversed",
+      "name": "Technical Division",
       "levels": [
         {
           "tileSize": 256,
@@ -1552,7 +1540,7 @@ var APP_DATA = {
     },
     {
       "id": "14-09_2f_technical-division-left-side-corner",
-      "name": "09_2F_Technical-Division-Left-Side-Corner",
+      "name": "Technical Division",
       "levels": [
         {
           "tileSize": 256,
@@ -1590,7 +1578,7 @@ var APP_DATA = {
     },
     {
       "id": "15-10_2f_technical-division-right-side",
-      "name": "10_2F_Technical-Division-Right-Side",
+      "name": "Technical Division",
       "levels": [
         {
           "tileSize": 256,
@@ -1634,7 +1622,7 @@ var APP_DATA = {
     },
     {
       "id": "16-10_2f_technical-division-right-side-reversed",
-      "name": "10_2F_Technical-Division-Right-Side-reversed",
+      "name": "Technical Division",
       "levels": [
         {
           "tileSize": 256,
@@ -1678,7 +1666,7 @@ var APP_DATA = {
     },
     {
       "id": "17-11_2f_technical-division-right-corner",
-      "name": "11_2F_Technical-Division-Right-Corner",
+      "name": "Technical Division",
       "levels": [
         {
           "tileSize": 256,
@@ -1716,7 +1704,7 @@ var APP_DATA = {
     },
     {
       "id": "18-12_2f_secretary-room-center",
-      "name": "12_2F_Secretary-Room-Center",
+      "name": "Secretary Room",
       "levels": [
         {
           "tileSize": 256,
@@ -1766,7 +1754,7 @@ var APP_DATA = {
     },
     {
       "id": "19-12_2f_secretary-room-center-reversed",
-      "name": "12_2F_Secretary-Room-Center-reversed",
+      "name": "Secretary Room",
       "levels": [
         {
           "tileSize": 256,
@@ -1816,7 +1804,7 @@ var APP_DATA = {
     },
     {
       "id": "20-13_2f_secretary-room-entrance",
-      "name": "13_2F_Secretary-Room-Entrance",
+      "name": "Secretary Room (Entrance)",
       "levels": [
         {
           "tileSize": 256,
@@ -1850,10 +1838,16 @@ var APP_DATA = {
           "target": "8-06_2f_technical-division-entrance-01"
         },
         {
-          "yaw": -0.9630692066211441,
-          "pitch": 0.32947799183247106,
+          "yaw": -0.6630692066211441,
+          "pitch": 0.42947799183247106,
           "rotation": 0,
           "target": "18-12_2f_secretary-room-center"
+        },
+        {
+          "yaw": 2.0019525050247395,
+          "pitch": 0.33447882795281103,
+          "rotation": 0,
+          "target": "0-01_2f_hallway_stairwell"
         },
         {
           "yaw": 0.04,
@@ -1866,7 +1860,7 @@ var APP_DATA = {
     },
     {
       "id": "21-13_2f_secretary-room-entrance-reversed",
-      "name": "13_2F_Secretary-Room-Entrance-reversed",
+      "name": "Secretary Room (Entrance)",
       "levels": [
         {
           "tileSize": 256,
@@ -1900,10 +1894,16 @@ var APP_DATA = {
           "target": "8-06_2f_technical-division-entrance-01"
         },
         {
-          "yaw": -0.9630692066211441,
-          "pitch": 0.32947799183247106,
+          "yaw": -0.6630692066211441,
+          "pitch": 0.42947799183247106,
           "rotation": 0,
           "target": "18-12_2f_secretary-room-center"
+        },
+        {
+          "yaw": 2.0019525050247395,
+          "pitch": 0.33447882795281103,
+          "rotation": 0,
+          "target": "0-01_2f_hallway_stairwell"
         },
         {
           "yaw": 0.04,
@@ -1916,7 +1916,7 @@ var APP_DATA = {
     },
     {
       "id": "22-14_2f_director-office-entrance",
-      "name": "14_2F_Director-Office-Entrance",
+      "name": "Director Office (Entrance)",
       "levels": [
         {
           "tileSize": 256,
@@ -1972,7 +1972,7 @@ var APP_DATA = {
     },
     {
       "id": "23-14_2f_director-office-entrance-reversed",
-      "name": "14_2F_Director-Office-Entrance-reversed",
+      "name": "Director Office (Entrance)",
       "levels": [
         {
           "tileSize": 256,
@@ -2028,7 +2028,7 @@ var APP_DATA = {
     },
     {
       "id": "24-15_2f_director-office-center",
-      "name": "15_2F_Director-Office-Center",
+      "name": "Director Office",
       "levels": [
         {
           "tileSize": 256,
