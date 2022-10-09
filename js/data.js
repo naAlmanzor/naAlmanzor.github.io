@@ -407,7 +407,7 @@ var APP_DATA = {
      },
      {
        "id": "7-06_1f_records-front-side",
-       "name": "Front",
+       "name": "Records",
        "levels": [
          {
            "tileSize": 256,
@@ -451,7 +451,7 @@ var APP_DATA = {
      },
      {
        "id": "8-07_1f_records-back-side",
-       "name": "Back",
+       "name": "Records",
        "levels": [
          {
            "tileSize": 256,
@@ -755,7 +755,7 @@ var APP_DATA = {
      },
      {
        "id": "14-11_1f_administration-center-room",
-       "name": "Center",
+       "name": "Administration",
        "levels": [
          {
            "tileSize": 256,
