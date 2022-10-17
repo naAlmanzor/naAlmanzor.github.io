@@ -29,6 +29,9 @@ import {sound, sound2, sound3, sound4} from './audioData.js';
   var sceneListElement = document.querySelector('#sceneList');
   var sceneElements = document.querySelectorAll('#sceneList .scene');
   var sceneListToggleElement = document.querySelector('#sceneListToggle');
+
+  var audioToggleElement = document.querySelector('#audioToggle');
+
   var autorotateToggleElement = document.querySelector('#autorotateToggle');
   var fullscreenToggleElement = document.querySelector('#fullscreenToggle');
 
@@ -296,8 +299,22 @@ import {sound, sound2, sound3, sound4} from './audioData.js';
     document.body.classList.add('fullscreen-disabled');
   }
 
+  //TODO AUDIO STUFF
   // Set handler for scene list toggle.
   sceneListToggleElement.addEventListener('click', toggleSceneList);
+  audioToggleElement.addEventListener('click', toggleAudio);
+
+  let audioEnabled = false;
+
+  function toggleAudio() {
+    console.log(audioEnabled);
+    if(audioEnabled==false) {
+      audioEnabled=true;
+    }
+    else if(audioEnabled==true) {
+      audioEnabled=false;
+    }
+  };
 
   // Start with the scene list open on desktop.
   // if (!document.body.classList.contains('mobile')) {
@@ -516,9 +533,11 @@ import {sound, sound2, sound3, sound4} from './audioData.js';
       //TODO FIX AUDIO SYSTEM LATER
 
       var soundToggle = function() {
-        if(sound3.playing()==false) {
+        if(sound3.playing()==false && audioEnabled==true) {
           // sound3.play();
           if(hotspot.title.includes("COA")) {
+            sound4.play();
+          } else if(hotspot.title.includes("Records")) {
             sound4.play();
           } else if(hotspot.title.includes("Cashier")) {
             sound4.play();
@@ -539,7 +558,7 @@ import {sound, sound2, sound3, sound4} from './audioData.js';
           } else {
             sound3.play();
           }
-        } else if(sound3.playing()==true) {
+        } else if(sound3.playing()==true && audioEnabled==false) {
           sound3.stop();
           sound4.stop();
         }
