@@ -1,3 +1,5 @@
+import {sound, sound2, sound3, sound4} from './audioData.js';
+
 /*
  * Copyright 2016 Google Inc. All rights reserved.
  *
@@ -415,6 +417,8 @@
   
   function createInfoHotspotElement(hotspot, type, header_color, close_color, text_color) {
     
+    // let isPlaying = false;
+
     if(hotspot.hasOwnProperty('popup')){
         var wrapper = document.createElement('div');
         wrapper.classList.add('info-hotspot');
@@ -509,11 +513,27 @@
       modal.classList.toggle('visible');
       };
 
+      var soundToggle = function() {
+        if(sound3.playing()==false) {
+          // sound3.play();
+          if(hotspot.title.includes("COA")) {
+            sound4.play();
+          } else {
+            sound3.play();
+          }
+        } else if(sound3.playing()==true) {
+          sound3.stop();
+          sound4.stop();
+        }
+      };
+
       // Show content when hotspot is clicked.
       wrapper.querySelector('.info-hotspot-header').addEventListener('click', toggle);
+      wrapper.querySelector('.info-hotspot-header').addEventListener('click', soundToggle);
 
       // Hide content when close icon is clicked.
       modal.querySelector('.info-hotspot-close-wrapper').addEventListener('click', toggle);
+      modal.querySelector('.info-hotspot-close-wrapper').addEventListener('click', soundToggle);
 
       // Prevent touch and scroll events from reaching the parent element.
       // This prevents the view control logic from interfering with the hotspot.
