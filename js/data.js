@@ -82,12 +82,12 @@ var APP_DATA = {
          }
        ],
        "infoHotspots": [
-         {
-           "yaw": 1.0030102336653925,
-           "pitch": -0.3718919045371525,
-           "title": "QR Code",
-           "popup": "./assets/icons/up.png",
-         }
+        //  {
+        //    "yaw": 1.0030102336653925,
+        //    "pitch": -0.3718919045371525,
+        //    "title": "QR Code",
+        //    "popup": "./assets/icons/up.png",
+        //  }
        ]
      },
      {
@@ -135,12 +135,12 @@ var APP_DATA = {
          }
        ],
        "infoHotspots": [
-         {
-           "yaw": 1.003048916953631,
-           "pitch": -0.38434638365872154,
-           "title": "QR Code",
-           "popup": "./assets/icons/up.png",
-         }
+        //  {
+        //    "yaw": 1.003048916953631,
+        //    "pitch": -0.38434638365872154,
+        //    "title": "QR Code",
+        //    "popup": "./assets/icons/up.png",
+        //  }
        ]
      },
      {
@@ -203,7 +203,7 @@ var APP_DATA = {
            "yaw": 1.3345362945410386,
            "pitch": -0.12316665319798759,
            "title": "Records",
-           "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida congue nibh et mattis. Donec pellentesque leo sed lorem gravida laoreet. Quisque auctor laoreet turpis vel facilisis. Nunc neque lacus, finibus et accumsan mollis, consequat ac augue. Mauris hendrerit lectus ut urna fermentum, a efficitur metus finibus. Cras consectetur finibus hendrerit. Aliquam mi lacus, accumsan iaculis eros in, viverra pretium ex. Nunc a mi ac massa porttitor euismod. Nam sem magna, tincidunt eget dictum in, tincidunt sodales nulla. Aliquam sagittis lorem eget sodales viverra. Vivamus et urna magna. Nullam laoreet, sem nec tempus gravida, purus mi iaculis metus, non tincidunt sem mauris eget quam."
+           "text": "Part of the Administrive Division, this facility holds the information of classified and important documents within the Building."
          }
        ]
      },
@@ -261,13 +261,13 @@ var APP_DATA = {
           "yaw": 1.3345362945410386,
            "pitch": -0.12316665319798759,
            "title": "Records",
-           "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida congue nibh et mattis. Donec pellentesque leo sed lorem gravida laoreet. Quisque auctor laoreet turpis vel facilisis. Nunc neque lacus, finibus et accumsan mollis, consequat ac augue. Mauris hendrerit lectus ut urna fermentum, a efficitur metus finibus. Cras consectetur finibus hendrerit. Aliquam mi lacus, accumsan iaculis eros in, viverra pretium ex. Nunc a mi ac massa porttitor euismod. Nam sem magna, tincidunt eget dictum in, tincidunt sodales nulla. Aliquam sagittis lorem eget sodales viverra. Vivamus et urna magna. Nullam laoreet, sem nec tempus gravida, purus mi iaculis metus, non tincidunt sem mauris eget quam."
+           "text": "Part of the Administrive Division, this facility holds the information of classified and important documents within the Building."
          }
       ]
      },
      {
        "id": "5-04_1f_lobby-corner",
-       "name": "Lobby (Corner)",
+       "name": "Lobby",
        "levels": [
          {
            "tileSize": 256,
@@ -323,7 +323,7 @@ var APP_DATA = {
          {
            "yaw": -2.7224178040347464,
            "pitch": 0.10603776137863896,
-           "title": "Restricted",
+           "title": "COA",
            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida congue nibh et mattis. Donec pellentesque leo sed lorem gravida laoreet. Quisque auctor laoreet turpis vel facilisis. Nunc neque lacus, finibus et accumsan mollis, consequat ac augue. Mauris hendrerit lectus ut urna fermentum, a efficitur metus finibus. Cras consectetur finibus hendrerit. Aliquam mi lacus, accumsan iaculis eros in, viverra pretium ex. Nunc a mi ac massa porttitor euismod. Nam sem magna, tincidunt eget dictum in, tincidunt sodales nulla. Aliquam sagittis lorem eget sodales viverra. Vivamus et urna magna. Nullam laoreet, sem nec tempus gravida, purus mi iaculis metus, non tincidunt sem mauris eget quam."
          },
 
@@ -331,16 +331,8 @@ var APP_DATA = {
           "yaw": -3.8024178040347464,
           "pitch": 0.08603776137863896,
           "title": "Restricted",
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida congue nibh et mattis. Donec pellentesque leo sed lorem gravida laoreet. Quisque auctor laoreet turpis vel facilisis. Nunc neque lacus, finibus et accumsan mollis, consequat ac augue. Mauris hendrerit lectus ut urna fermentum, a efficitur metus finibus. Cras consectetur finibus hendrerit. Aliquam mi lacus, accumsan iaculis eros in, viverra pretium ex. Nunc a mi ac massa porttitor euismod. Nam sem magna, tincidunt eget dictum in, tincidunt sodales nulla. Aliquam sagittis lorem eget sodales viverra. Vivamus et urna magna. Nullam laoreet, sem nec tempus gravida, purus mi iaculis metus, non tincidunt sem mauris eget quam."
+          "text": "This area is unavailable for access to the public."
         },
-         {
-           "yaw": 1.0605471922804615,
-           "pitch": -0.18495530854154119,
-           "title": "sample",
-           "popup": "./assets/icons/windowed.png",
-          //  "title": "Sample",
-          //  "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida congue nibh et mattis. Donec pellentesque leo sed lorem gravida laoreet. Quisque auctor laoreet turpis vel facilisis. Nunc neque lacus, finibus et accumsan mollis, consequat ac augue. Mauris hendrerit lectus ut urna fermentum, a efficitur metus finibus. Cras consectetur finibus hendrerit. Aliquam mi lacus, accumsan iaculis eros in, viverra pretium ex. Nunc a mi ac massa porttitor euismod. Nam sem magna, tincidunt eget dictum in, tincidunt sodales nulla. Aliquam sagittis lorem eget sodales viverra. Vivamus et urna magna. Nullam laoreet, sem nec tempus gravida, purus mi iaculis metus, non tincidunt sem mauris eget quam."
-         }
        ]
      },
      {
@@ -588,7 +580,7 @@ var APP_DATA = {
          },
          {
           "yaw": 2.4763559710025973,
-          "pitch": 0.2847440873173692,
+          "pitch": 0.0847440873173692,
           "rotation": 0,
           "target": "13-10_1f_administration-entrance",
         },
@@ -599,7 +591,14 @@ var APP_DATA = {
           "target": "6-05_1f_records-entrance",
         }
        ],
-       "infoHotspots": []
+       "infoHotspots": [
+        {
+          "yaw": -1.4297443684049895,
+          "pitch": 0.1924372250113784,
+          "title": "Cashier",
+          "text": "Part of the Administrive Division, This facility is where payments are made along with securing proof of payment reciepts."
+        }
+       ]
      },
      {
        "id": "11-08_1f_hallway-center-reversed",
@@ -646,7 +645,7 @@ var APP_DATA = {
          },
          {
           "yaw": 2.4999661823302333,
-          "pitch": 0.27511622019067516,
+          "pitch": 0.07511622019067516,
           "rotation": 0,
           "target": "13-10_1f_administration-entrance",
         },
@@ -657,11 +656,18 @@ var APP_DATA = {
           "target": "6-05_1f_records-entrance",
         }
        ],
-       "infoHotspots": []
+       "infoHotspots": [
+        {
+          "yaw": -1.4297443684049895,
+          "pitch": 0.1924372250113784,
+          "title": "Cashier",
+          "text": "Part of the Administrive Division, This facility is where payments are made along with securing proof of payment reciepts."
+        }
+       ]
      },
      {
        "id": "12-09_1f_hallway-corner",
-       "name": "Hallway (Corner)",
+       "name": "Stairwell (1F)",
        "levels": [
          {
            "tileSize": 256,
@@ -701,7 +707,14 @@ var APP_DATA = {
            "target": "0-01_2f_hallway_stairwell",
          }
        ],
-       "infoHotspots": []
+       "infoHotspots": [
+        {
+          "yaw": 1.546483084057265,
+          "pitch": -0.24043905946258732,
+          "title": "Floor Layout",
+          "popup": "./assets/images/floor1-layout.png",
+        }
+       ]
      },
      {
        "id": "13-10_1f_administration-entrance",
@@ -1102,7 +1115,7 @@ var APP_DATA = {
     },
     {
       "id": "5-04_2f_conference-room-center",
-      "name": "04_2F_Conference-Room-Center",
+      "name": "Conference Room",
       "levels": [
         {
           "tileSize": 256,
@@ -1142,7 +1155,14 @@ var APP_DATA = {
           "target": "7-05_2f_conference-room-entrance-02-reversed"
         }
       ],
-      "infoHotspots": []
+      "infoHotspots": [
+        {
+          "yaw": -1.257168600810381,
+          "pitch": -0.1025588606290615,
+          "title": "Conference Room",
+          "text": "Important meetings are held here."
+        }
+      ]
     },
     {
       "id": "6-05_2f_conference-room-entrance-02",
@@ -1190,6 +1210,12 @@ var APP_DATA = {
           "pitch": 0.15203071447067273,
           "rotation": 0,
           "target": "18-12_2f_secretary-room-center"
+        },
+        {
+          "yaw": 2.1260905752927934,
+          "pitch": 0.4597867317256963,
+          "rotation": 0,
+          "target": "10-07_2f_technical-division-center-room"
         }
       ],
       "infoHotspots": []
@@ -1240,6 +1266,12 @@ var APP_DATA = {
           "pitch": 0.15203071447067273,
           "rotation": 0,
           "target": "18-12_2f_secretary-room-center"
+        },
+        {
+          "yaw": 2.1260905752927934,
+          "pitch": 0.4597867317256963,
+          "rotation": 0,
+          "target": "10-07_2f_technical-division-center-room"
         }
       ],
       "infoHotspots": []
@@ -1352,7 +1384,7 @@ var APP_DATA = {
     },
     {
       "id": "10-07_2f_technical-division-center-room",
-      "name": "Technical Division (Center)",
+      "name": "Technical Division",
       "levels": [
         {
           "tileSize": 256,
@@ -1396,13 +1428,32 @@ var APP_DATA = {
           "pitch": 0.08359954787598411,
           "rotation": 0,
           "target": "9-06_2f_technical-division-entrance-01-reversed"
+        },
+        {
+          "yaw": -2.768697884878847,
+          "pitch": 0.07058983359090121,
+          "rotation": 0,
+          "target": "6-05_2f_conference-room-entrance-02"
         }
       ],
-      "infoHotspots": []
+      "infoHotspots": [
+        {
+          "yaw": 0.2507331495833274,
+          "pitch": -0.21320507404740496,
+          "title": "Technical Division",
+          "text": "<div style='font-weight: bold;'>The room consists of the following units:</div><div><br>  -Chief Education Program Specialist</div><div><br>  -Supervising Education Program Specialist</div><div><br>  -Education Supervisors, Education Program Specialist</div><div><br>  -SIKAP or LGSO</div><div><br>  -StuFAPs Unit</div><div><br>  -UniFAST Unit</div><div>"
+        },
+        {
+          "yaw": 2.1156639735184513,
+          "pitch": -0.15180480688423273,
+          "title": "Floor Layout",
+          "popup": "./assets/images/floor2-layout.png"
+        }
+      ]
     },
     {
       "id": "11-07_2f_technical-division-center-reversed",
-      "name": "Technical Division (Center)",
+      "name": "Technical Division",
       "levels": [
         {
           "tileSize": 256,
@@ -1446,9 +1497,28 @@ var APP_DATA = {
           "pitch": 0.039620688731188736,
           "rotation": 0,
           "target": "9-06_2f_technical-division-entrance-01-reversed"
+        },
+        {
+          "yaw": -2.768697884878847,
+          "pitch": 0.07058983359090121,
+          "rotation": 0,
+          "target": "6-05_2f_conference-room-entrance-02"
         }
       ],
-      "infoHotspots": []
+      "infoHotspots": [
+        {
+          "yaw": 0.2507331495833274,
+          "pitch": -0.21320507404740496,
+          "title": "Technical Division",
+          "text": "<div style='font-weight: bold;'>The room consists of the following units:</div><div><br>  Chief Education Program Specialist</div><div><br>  - Supervising Education Program Specialist</div><div><br>  Education Supervisors, Education Program Specialist</div><div> <br>  SIKAP or LGSO</div><div><br>  StuFAPs Unit</div><div><br>  UniFAST Unit</div><div>"
+        },
+        {
+          "yaw": 2.1156639735184513,
+          "pitch": -0.15180480688423273,
+          "title": "Floor Layout",
+          "popup": "./assets/images/floor1-layout.png"
+        }
+      ]
     },
     {
       "id": "12-08_2f_technical-division-left-side",
@@ -1733,13 +1803,13 @@ var APP_DATA = {
       "linkHotspots": [
         {
           "yaw": -2.578195050739371,
-          "pitch": 0.17338143684224328,
+          "pitch": 0.01338143684224328,
           "rotation": 0,
           "target": "21-13_2f_secretary-room-entrance-reversed"
         },
         {
           "yaw": -0.8561820367501198,
-          "pitch": 0.24671845013399718,
+          "pitch": 0.0171845013399718,
           "rotation": 0,
           "target": "8-06_2f_technical-division-entrance-01"
         },
@@ -1750,7 +1820,14 @@ var APP_DATA = {
           "target": "22-14_2f_director-office-entrance"
         }
       ],
-      "infoHotspots": []
+      "infoHotspots": [
+        {
+          "yaw": -0.13792211543249167,
+          "pitch": 0.2142394324042481,
+          "title": "Secretary",
+          "text": "The office of CHED Region XI's Secretary. Recieves and records requested documents as well as signs any neccessary documents and or letters. Is also in charge of releasing documents to HRDD."
+        }
+      ]
     },
     {
       "id": "19-12_2f_secretary-room-center-reversed",
@@ -1783,13 +1860,13 @@ var APP_DATA = {
       "linkHotspots": [
         {
           "yaw": -2.619365109194817,
-          "pitch": 0.13612264454069845,
+          "pitch": 0.01612264454069845,
           "rotation": 0,
           "target": "21-13_2f_secretary-room-entrance-reversed"
         },
         {
           "yaw": -0.8707200110532494,
-          "pitch": 0.2072238912648281,
+          "pitch": 0.0172238912648281,
           "rotation": 0,
           "target": "8-06_2f_technical-division-entrance-01"
         },
@@ -1800,7 +1877,14 @@ var APP_DATA = {
           "target": "22-14_2f_director-office-entrance"
         }
       ],
-      "infoHotspots": []
+      "infoHotspots": [
+        {
+          "yaw": -0.13792211543249167,
+          "pitch": 0.1142394324042481,
+          "title": "Secretary",
+          "text": "<div>The office of CHED Region XI's Secretary. Recieves and records requested documents as well as signs any neccessary documents/letters. Is also in charge of releasing documents to HRDD.</div><div><br></div>"
+        }
+      ]
     },
     {
       "id": "20-13_2f_secretary-room-entrance",
@@ -1851,7 +1935,7 @@ var APP_DATA = {
         },
         {
           "yaw": 0.04,
-          "pitch": 0,
+          "pitch": 0.1,
           "rotation": 0,
           "target": "22-14_2f_director-office-entrance"
         }
@@ -1907,7 +1991,7 @@ var APP_DATA = {
         },
         {
           "yaw": 0.04,
-          "pitch": 0,
+          "pitch": 0.1,
           "rotation": 0,
           "target": "22-14_2f_director-office-entrance"
         }
@@ -1916,7 +2000,7 @@ var APP_DATA = {
     },
     {
       "id": "22-14_2f_director-office-entrance",
-      "name": "Director Office (Entrance)",
+      "name": "Director's Office (Entrance)",
       "levels": [
         {
           "tileSize": 256,
@@ -1972,7 +2056,7 @@ var APP_DATA = {
     },
     {
       "id": "23-14_2f_director-office-entrance-reversed",
-      "name": "Director Office (Entrance)",
+      "name": "Director's Office (Entrance)",
       "levels": [
         {
           "tileSize": 256,
@@ -2028,7 +2112,7 @@ var APP_DATA = {
     },
     {
       "id": "24-15_2f_director-office-center",
-      "name": "Director Office",
+      "name": "Director's Office",
       "levels": [
         {
           "tileSize": 256,
@@ -2062,7 +2146,14 @@ var APP_DATA = {
           "target": "23-14_2f_director-office-entrance-reversed"
         }
       ],
-      "infoHotspots": []
+      "infoHotspots": [
+        {
+          "yaw": 0.1323711074087175,
+          "pitch": 0.21167372284237047,
+          "title": "Director's Office",
+          "text": "The office of CHED Region XI's Director. Certificates, documents and the likes are forwarded here. The reviewin and signing of documents are also done here in addtion to the secretary room"
+        }
+      ]
     },
     // 3rd floor
     {
@@ -2151,7 +2242,14 @@ var APP_DATA = {
           "target": "0-01_3f_stairwell"
         }
       ],
-      "infoHotspots": []
+      "infoHotspots": [
+        {
+          "yaw": -1.9020865142300565,
+          "pitch": -0.1771818111313337,
+          "title": "Floor Layout",
+          "popup": "./assets/images/floor3-layout.png"
+        }
+      ]
     },
     {
       "id": "2-02_3f_cubicles-entrance_reversed",
@@ -2239,7 +2337,20 @@ var APP_DATA = {
           "target": "2-02_3f_cubicles-entrance_reversed"
         }
       ],
-      "infoHotspots": []
+      "infoHotspots": [
+        {
+          "yaw": -1.4817068784161442,
+          "pitch": -0.1,
+          "title": "Units",
+          "text": "Billing and Communication and Documentation Units"
+        },
+        {
+          "yaw": 1.5753015941988604,
+          "pitch": -0.1,
+          "title": "Units",
+          "text": "Liquidation and Validation Units"
+        }
+      ]
     },
     {
       "id": "4-03_3f_cubicles_reversed",
@@ -2283,7 +2394,20 @@ var APP_DATA = {
           "target": "2-02_3f_cubicles-entrance_reversed"
         }
       ],
-      "infoHotspots": []
+      "infoHotspots": [
+        {
+          "yaw": -1.4817068784161442,
+          "pitch": -0.1,
+          "title": "Units",
+          "text": "Billing and Communication and Documentation Units"
+        },
+        {
+          "yaw": 1.5753015941988604,
+          "pitch": -0.1,
+          "title": "Units",
+          "text": "Liquidation and Validation Units"
+        }
+      ]
     },
     {
       "id": "5-04_3f_stage-entrance",
@@ -2409,7 +2533,14 @@ var APP_DATA = {
           "target": "6-04_3f_stage-entrance_reversed"
         }
       ],
-      "infoHotspots": []
+      "infoHotspots": [
+        {
+          "yaw": -3.127422649174843,
+          "pitch": 0.02786225596958232,
+          "title": "Stage",
+          "text": "This room is used for press conferences and any other events that CHED promotes"
+        }
+      ]
     }
    ],
    "name": "CHED Project",

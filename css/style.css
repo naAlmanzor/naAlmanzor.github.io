@@ -25,6 +25,7 @@ body {
   overflow: hidden;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 20px;
+  /* text-align: justify; */
   background-color: #000;
   color: #fff;
 }
@@ -57,7 +58,8 @@ a:visited {
 
 .mobile #titleBar {
   height: 50px;
-  right: 50px;
+  right: 58px;
+  /* font-size: 18px; */
 }
 
 /* If there is a fullscreen button the title bar must make space for it */
@@ -166,7 +168,33 @@ body.fullscreen-enabled #fullscreenToggle {
   height: 50px;
 }
 
+#audioToggle {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 3%;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  /* background-color: rgb(103,115,131); */
+  background-color: rgba(26, 63, 112);
+}
+
+.mobile #audioToggle {
+  right: 12%;
+  width: 50px;
+  height: 50px;
+}
+
 /* If there is a fullscreen button, autorotate must placed a bit to the left */
+body.fullscreen-enabled #autorotateToggle {
+  right: 40px;
+}
+
+body.fullscreen-enabled.mobile #autorotateToggle {
+  right: 50px;
+}
+
 body.fullscreen-enabled #autorotateToggle {
   right: 40px;
 }
@@ -188,6 +216,19 @@ body.fullscreen-enabled.mobile #autorotateToggle {
   right: 10px;
 }
 
+#audioToggle .icon {
+  position: absolute;
+  top: 8px;
+  right: 3px;
+  width: 25px;
+  height: 25px;
+}
+
+.mobile #audioToggle .icon {
+  top: 12px;
+  right: 10px;
+}
+
 #autorotateToggle .icon.on {
   display: none;
 }
@@ -202,6 +243,22 @@ body.fullscreen-enabled.mobile #autorotateToggle {
 
 #autorotateToggle.enabled .icon.off {
   display: none;
+}
+
+#audioToggle .icon.on {
+  display: block;
+}
+
+#audioToggle .icon.off {
+  display: none;
+}
+
+#audioToggle.enabled .icon.on {
+  display: none;
+}
+
+#audioToggle.enabled .icon.off {
+  display: block;
 }
 
 #sceneListToggle {
