@@ -512,11 +512,29 @@ import {sound, sound2, sound3, sound4} from './audioData.js';
       wrapper.classList.toggle('visible');
       modal.classList.toggle('visible');
       };
+      
+      //TODO FIX AUDIO SYSTEM LATER
 
       var soundToggle = function() {
         if(sound3.playing()==false) {
           // sound3.play();
           if(hotspot.title.includes("COA")) {
+            sound4.play();
+          } else if(hotspot.title.includes("Cashier")) {
+            sound4.play();
+          } else if(hotspot.title.includes("Conference Room")) {
+            sound4.play();
+          } else if(hotspot.title.includes("Technical Division")) {
+            sound4.play();
+          } else if(hotspot.title.includes("Secretary")) {
+            sound4.play();
+          } else if(hotspot.title.includes("Director's Office")) {
+            sound4.play();
+          } else if(hotspot.title.includes("Units") && hotspot.text.includes("Billing")) {
+            sound4.play();
+          }  else if(hotspot.title.includes("Units") && hotspot.text.includes("Liquidation")) {
+            sound4.play();
+          } else if(hotspot.title.includes("Stage")) {
             sound4.play();
           } else {
             sound3.play();
