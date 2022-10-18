@@ -2198,7 +2198,14 @@ var APP_DATA = {
           "target": "1-02_3f_cubicles-entrance"
         }
       ],
-      "infoHotspots": []
+      "infoHotspots": [
+        {
+          "yaw": -1.9020865142300565,
+          "pitch": -0.1771818111313337,
+          "title": "Floor Layout",
+          "popup": "./assets/images/floor3-layout.png"
+        }
+      ]
     },
     {
       "id": "1-02_3f_cubicles-entrance",
@@ -2242,14 +2249,7 @@ var APP_DATA = {
           "target": "0-01_3f_stairwell"
         }
       ],
-      "infoHotspots": [
-        {
-          "yaw": -1.9020865142300565,
-          "pitch": -0.1771818111313337,
-          "title": "Floor Layout",
-          "popup": "./assets/images/floor3-layout.png"
-        }
-      ]
+      "infoHotspots": []
     },
     {
       "id": "2-02_3f_cubicles-entrance_reversed",
