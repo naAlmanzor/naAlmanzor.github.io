@@ -306,7 +306,7 @@ var APP_DATA = {
            "yaw": -2.7224178040347464,
            "pitch": 0.10603776137863896,
            "title": "COA",
-           "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida congue nibh et mattis. Donec pellentesque leo sed lorem gravida laoreet. Quisque auctor laoreet turpis vel facilisis. Nunc neque lacus, finibus et accumsan mollis, consequat ac augue. Mauris hendrerit lectus ut urna fermentum, a efficitur metus finibus. Cras consectetur finibus hendrerit. Aliquam mi lacus, accumsan iaculis eros in, viverra pretium ex. Nunc a mi ac massa porttitor euismod. Nam sem magna, tincidunt eget dictum in, tincidunt sodales nulla. Aliquam sagittis lorem eget sodales viverra. Vivamus et urna magna. Nullam laoreet, sem nec tempus gravida, purus mi iaculis metus, non tincidunt sem mauris eget quam."
+           "text": ""
          },
 
          {
