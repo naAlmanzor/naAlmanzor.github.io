@@ -82,12 +82,6 @@ var APP_DATA = {
          }
        ],
        "infoHotspots": [
-        //  {
-        //    "yaw": 1.0030102336653925,
-        //    "pitch": -0.3718919045371525,
-        //    "title": "QR Code",
-        //    "popup": "./assets/icons/up.png",
-        //  }
        ]
      },
      {
@@ -135,12 +129,6 @@ var APP_DATA = {
          }
        ],
        "infoHotspots": [
-        //  {
-        //    "yaw": 1.003048916953631,
-        //    "pitch": -0.38434638365872154,
-        //    "title": "QR Code",
-        //    "popup": "./assets/icons/up.png",
-        //  }
        ]
      },
      {
@@ -193,12 +181,6 @@ var APP_DATA = {
          }
        ],
        "infoHotspots": [
-        //  {
-        //    "yaw": -1.5547279662748785,
-        //    "pitch": -0.18069876998386647,
-        //    "title": "Sample",
-        //    "text": "Sample<div><br></div>"
-        //  },
          {
            "yaw": 1.3345362945410386,
            "pitch": -0.12316665319798759,
@@ -320,6 +302,12 @@ var APP_DATA = {
         }
        ],
        "infoHotspots": [
+//         {
+//           "yaw": -2.7224178040347464,
+//           "pitch": 0.10603776137863896,
+//           "title": "COA",
+//           "text": ""
+//         },
 //          {
 //            "yaw": -2.7224178040347464,
 //            "pitch": 0.10603776137863896,

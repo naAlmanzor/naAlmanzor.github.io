@@ -1,5 +1,3 @@
-import {sound, sound2, sound3, sound4} from './audioData.js';
-
 /*
  * Copyright 2016 Google Inc. All rights reserved.
  *
@@ -29,9 +27,6 @@ import {sound, sound2, sound3, sound4} from './audioData.js';
   var sceneListElement = document.querySelector('#sceneList');
   var sceneElements = document.querySelectorAll('#sceneList .scene');
   var sceneListToggleElement = document.querySelector('#sceneListToggle');
-
-  var audioToggleElement = document.querySelector('#audioToggle');
-
   var autorotateToggleElement = document.querySelector('#autorotateToggle');
   var fullscreenToggleElement = document.querySelector('#fullscreenToggle');
 
@@ -201,8 +196,6 @@ import {sound, sound2, sound3, sound4} from './audioData.js';
           var element = createHotspotElement(hotspot, elementImg);
           scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch},{perspective: {extraTransforms: "rotateX(70deg)"}});
         }
-        // var element = createHotspotElement(hotspot, elementImg);
-        // scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch});
       }
 
       // 3rd floor
@@ -299,27 +292,8 @@ import {sound, sound2, sound3, sound4} from './audioData.js';
     document.body.classList.add('fullscreen-disabled');
   }
 
-  //TODO AUDIO STUFF
   // Set handler for scene list toggle.
   sceneListToggleElement.addEventListener('click', toggleSceneList);
-  audioToggleElement.addEventListener('click', toggleAudio);
-
-  let audioEnabled = false;
-
-  function toggleAudio() {
-    console.log(audioEnabled);
-    if(audioEnabled==false) {
-      audioEnabled=true;
-    }
-    else if(audioEnabled==true) {
-      audioEnabled=false;
-    }
-  };
-
-  // Start with the scene list open on desktop.
-  // if (!document.body.classList.contains('mobile')) {
-  //   showSceneList();
-  // }
 
   // Set handler for scene switch.
   scenes.forEach(function(scene) {
@@ -360,11 +334,6 @@ import {sound, sound2, sound3, sound4} from './audioData.js';
       }
     }
   }
-
-  // function showSceneList() {
-  //   sceneListElement.classList.add('enabled');
-  //   sceneListToggleElement.classList.add('enabled');
-  // }
 
   function hideSceneList() {
     sceneListElement.classList.remove('enabled');
@@ -529,48 +498,12 @@ import {sound, sound2, sound3, sound4} from './audioData.js';
       wrapper.classList.toggle('visible');
       modal.classList.toggle('visible');
       };
-      
-      //TODO FIX AUDIO SYSTEM LATER
-
-      var soundToggle = function() {
-        if(sound3.playing()==false && audioEnabled==true) {
-          // sound3.play();
-          if(hotspot.title.includes("COA")) {
-            sound4.play();
-          } else if(hotspot.title.includes("Records")) {
-            sound4.play();
-          } else if(hotspot.title.includes("Cashier")) {
-            sound4.play();
-          } else if(hotspot.title.includes("Conference Room")) {
-            sound4.play();
-          } else if(hotspot.title.includes("Technical Division")) {
-            sound4.play();
-          } else if(hotspot.title.includes("Secretary")) {
-            sound4.play();
-          } else if(hotspot.title.includes("Director's Office")) {
-            sound4.play();
-          } else if(hotspot.title.includes("Units") && hotspot.text.includes("Billing")) {
-            sound4.play();
-          }  else if(hotspot.title.includes("Units") && hotspot.text.includes("Liquidation")) {
-            sound4.play();
-          } else if(hotspot.title.includes("Stage")) {
-            sound4.play();
-          } else {
-            sound3.play();
-          }
-        } else if(sound3.playing()==true && audioEnabled==false) {
-          sound3.stop();
-          sound4.stop();
-        }
-      };
 
       // Show content when hotspot is clicked.
       wrapper.querySelector('.info-hotspot-header').addEventListener('click', toggle);
-      wrapper.querySelector('.info-hotspot-header').addEventListener('click', soundToggle);
 
       // Hide content when close icon is clicked.
       modal.querySelector('.info-hotspot-close-wrapper').addEventListener('click', toggle);
-      modal.querySelector('.info-hotspot-close-wrapper').addEventListener('click', soundToggle);
 
       // Prevent touch and scroll events from reaching the parent element.
       // This prevents the view control logic from interfering with the hotspot.
